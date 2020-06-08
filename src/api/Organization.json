@@ -1,0 +1,75 @@
+{
+  "Cloud + AI Platfrom": [
+    {
+      "label": "AI Platfrom",
+      "value": "AI Platfrom"
+    },
+    {
+      "label": "Azure",
+      "value": "Azure"
+    },
+    {
+      "label": "Business Applications",
+      "value": "Business Applications"
+    },
+    {
+      "label": "BusinessAI",
+      "value": "BusinessAI"
+    },
+    {
+      "label": "China Cloud Group",
+      "value": "China Cloud Group"
+    },
+    {
+      "label": "Cognition",
+      "value": "Cognition"
+    },
+    {
+      "label": "Central Cloud + AI Platfrom",
+      "value": "Central Cloud + AI Platfrom"
+    },
+    {
+      "label": "Devdiv",
+      "value": "Devdiv"
+    },
+
+    {
+      "label": "COSINE",
+      "value": "COSINE"
+    },
+    {
+      "label": "Developer Service",
+      "value": "Developer Service"
+    }
+  ],
+
+  "Core Service Engg": [
+    {
+      "label": "Core Service Engg1",
+      "value": "Core Service Engg1"
+    },
+    {
+      "label": "Core1",
+      "value": "Core1"
+    },
+    {
+      "label": "CE1",
+      "value": "CE1"
+    }
+  ],
+
+  "Business Development": [
+    {
+      "label": "Business Development1",
+      "value": "Business Development1"
+    },
+    {
+      "label": "BDS",
+      "value": "BDS"
+    },
+    {
+      "label": "DEV1",
+      "value": "DEV1"
+    }
+  ]
+}

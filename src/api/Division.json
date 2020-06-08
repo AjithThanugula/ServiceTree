@@ -1,0 +1,45 @@
+{
+  "Division": [
+    {
+      "label": "Business Development",
+      "value": "Business Development"
+    },
+    {
+      "label": "Cloud + AI Platfrom",
+      "value": "Cloud + AI Platfrom"
+    },
+    {
+      "label": "Core Service Engg",
+      "value": "Core Service Engg"
+    },
+    {
+      "label": "Finance Group",
+      "value": "Finance Group"
+    },
+    {
+      "label": "Gaming",
+      "value": "Gaming"
+    },
+    {
+      "label": "HR Group",
+      "value": "HR Group"
+    },
+    {
+      "label": "Linkedin Group",
+      "value": "Linkedin Group"
+    },
+    {
+      "label": "Nonprofit",
+      "value": "Nonprofit"
+    },
+
+    {
+      "label": "Consulting",
+      "value": "Consulting"
+    },
+    {
+      "label": "Other",
+      "value": "Other"
+    }
+  ]
+}

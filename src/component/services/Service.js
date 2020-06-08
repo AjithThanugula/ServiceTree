@@ -7,16 +7,24 @@ export class Service extends Component {
       <div>
         <Sidebar />
         <div className="content">
-          <h2>Service Sidebar Example</h2>
+          <h2>Welcome to Service Tree</h2>
+          <p>Find your existing service</p>
+          <p>Service Tree offers 2 main ways to find existing services</p>
+          <p> 1)Browse and</p>
+          <p> 2)Search </p>
           <p>
-            This example use media queries to transform the sidebar to a top
-            navigation bar when the screen size is 700px or less.
+            To Browse use the organization filters(Division ,Organization and
+            [optionally] Service Group) to filter down the list of services you
+            are browsing
           </p>
+          <p>All the services listed in the organization will appear</p>
           <p>
-            We have also added a media query for screens that are 400px or less,
-            which will vertically stack and center the navigation links.
+            To Search use the Search Box(top right) and type in 3 or more
+            characters to find the available services
           </p>
-          <h3>Resize the browser window to see the effect.</h3>
+          <h3 className="caution">
+            Create new Service is yet to be implemented
+          </h3>
         </div>
       </div>
     );

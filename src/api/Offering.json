@@ -1,0 +1,38 @@
+{
+  "Azure": [
+    {
+      "label": "Autonomous Edge",
+      "value": "Autonomous Edge"
+    },
+    {
+      "label": "Azure Central",
+      "value": "Azure Central"
+    },
+    {
+      "label": "Azure Global",
+      "value": "Azure Global"
+    },
+    {
+      "label": "Azure Data",
+      "value": "Azure Data"
+    }
+  ],
+  "China Cloud Group": [
+    {
+      "label": "Autonomous Edge1",
+      "value": "Autonomous Edge1"
+    },
+    {
+      "label": "Azure Central1",
+      "value": "Azure Central1"
+    },
+    {
+      "label": "Azure Global1",
+      "value": "Azure Global1"
+    },
+    {
+      "label": "Azure Data1",
+      "value": "Azure Data1"
+    }
+  ]
+}
