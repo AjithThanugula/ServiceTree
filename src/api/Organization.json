@@ -1,75 +1,225 @@
 {
-  "Cloud + AI Platfrom": [
+  "Organization": [
     {
-      "label": "AI Platfrom",
-      "value": "AI Platfrom"
+      "Id": "dfca43bd-1729-4ef9-a450-f725bb27bbb9",
+      "Name": "AI Platform",
+      "Description": "The AI Platform team strives to provide the best platform for 1st and 3rd party developers and data scientists to build, deploy, and evaluate AI powered applications. We enable a data-driven culture, and infuse AI across Microsoft.\n\nOur team is structured in three areas:\n1.\tPre-built AI\n2.\tCustom AI\n3.\tData and Experimentation\n\nWe are driven by the following principles in thinking about our work\n•\tSingle Product. While we have three lenses through which we look, we expect all our efforts to compose into an integrated product suite.\n•\t1P == 3P. We will insist that the platforms we develop for 3rd party developers are exactly the same ones that our 1st party developers use. We acknowledge that there may be minor feature differences, but we want the platforms to be the same.  This enables both our 3rd and 1st party customers to benefit from the best of both ecosystems.\n•\tCustomer Focused. We drive our investments by partnering closely with our customers to understand their needs even deeper than they understand their needs themselves, and deliver fantastic experiences based on that.\n•\tInnovation driven. We balance the focus on customers with a focus on innovation as we know that AI is moving tremendously quickly, and technical innovation will drive and draw customers quickly to our platform.\n•\tSimple products. AI is a very difficult space, so we will focus on making products that are simple for our customers to understand and to use.\n•\tLive site focused. Our customers demand an enterprise class experience, and we will use a live site first approach to create that.",
+      "Tags": "",
+      "BusinessOwners": null,
+      "Status": "Active",
+      "Created": "2018-04-23T16:55:50.9602341Z",
+      "CreatedBy": "andrewj@microsoft.com",
+      "Modified": "2018-06-30T22:55:50.0452692Z",
+      "ModifiedBy": "opapel@microsoft.com",
+      "DivisionId": "85dd10f4-5484-48fa-b11f-6e6ab07f8d4c"
     },
     {
-      "label": "Azure",
-      "value": "Azure"
+      "Id": "f38ee5f4-d0ee-40a0-8e3f-633d9d9df8b6",
+      "Name": "Azure",
+      "Description": "Azure Business Group",
+      "Tags": null,
+      "BusinessOwners": null,
+      "Status": "Active",
+      "Created": "2015-07-15T22:39:36.3221679Z",
+      "CreatedBy": null,
+      "Modified": "2018-06-18T19:26:27.2491766Z",
+      "ModifiedBy": "andrewj@microsoft.com",
+      "DivisionId": "85dd10f4-5484-48fa-b11f-6e6ab07f8d4c"
     },
     {
-      "label": "Business Applications",
-      "value": "Business Applications"
+      "Id": "a0e8d612-00e8-4ef2-9bae-f8d97fac954f",
+      "Name": "Business Applications Group",
+      "Description": "Business Applications Group, led by James Phillips is made up of the entire Dynamics organization (ERP, SMB and CRM/Customer Engagement) as well as the Power Tier, Pro Tier, Gateways and Connectors and Common Data Service. \n\nHistory: Business Applications, Platform and Intelligence (BAPI) organization, led by James Phillips.  Additionally, the Dynamics CRM organization, led by Jujhar Singh makes up an additional arm of the larger  Business Applications and Application Platform (BAAP) pillar within C+E",
+      "Tags": "BAAP, BAPI, AX, NAV, Power BI, PowerApps, ProDev, Logic Apps,Stream,Flow,Notifciation Hub,AppService,App Source,Pro Integration,Pro BI,Media,CDN,D365 Operations,D365 Financials,BAG ,Citizen Application Platform,Developer Application Platform ,Intelligence Platform ",
+      "BusinessOwners": null,
+      "Status": "Active",
+      "Created": "2016-01-27T22:04:16.8282023Z",
+      "CreatedBy": "bryonb@microsoft.com",
+      "Modified": "2017-11-15T00:47:49.4624704Z",
+      "ModifiedBy": "TJeffers@microsoft.com",
+      "DivisionId": "85dd10f4-5484-48fa-b11f-6e6ab07f8d4c"
     },
     {
-      "label": "BusinessAI",
-      "value": "BusinessAI"
+      "Id": "95d73024-1594-44c2-8ea2-67be1878b616",
+      "Name": "BusinessAI",
+      "Description": "Business AI",
+      "Tags": "",
+      "BusinessOwners": null,
+      "Status": "Active",
+      "Created": "2017-06-12T04:31:16.3854967Z",
+      "CreatedBy": "mmaitre@microsoft.com",
+      "Modified": "2018-04-25T16:54:44.6075933Z",
+      "ModifiedBy": "daoodk@ntdev.microsoft.com",
+      "DivisionId": "85dd10f4-5484-48fa-b11f-6e6ab07f8d4c"
     },
     {
-      "label": "China Cloud Group",
-      "value": "China Cloud Group"
+      "Id": "bbe14e70-85fa-42ec-aae9-17bdb03bc289",
+      "Name": "Central Cloud + AI Platform",
+      "Description": "Org to map subscriptions using Central Cloud + AI Platform (VPLF) (OrgDetail) PC Codes to aid in cross-charge visability",
+      "Tags": "",
+      "BusinessOwners": null,
+      "Status": "Active",
+      "Created": "2019-05-09T17:37:06.1271287Z",
+      "CreatedBy": "maggar@microsoft.com",
+      "Modified": "2019-05-09T17:37:06.1271287Z",
+      "ModifiedBy": "maggar@microsoft.com",
+      "DivisionId": "85dd10f4-5484-48fa-b11f-6e6ab07f8d4c"
     },
     {
-      "label": "Cognition",
-      "value": "Cognition"
+      "Id": "472c6a67-cbe4-4c6b-9cd9-87685daa1f1e",
+      "Name": "China Cloud Group",
+      "Description": "China Cloud Group",
+      "Tags": "CCG",
+      "BusinessOwners": null,
+      "Status": "Active",
+      "Created": "2016-01-15T18:39:46.2319882Z",
+      "CreatedBy": "bryonb@microsoft.com",
+      "Modified": "2017-02-21T22:10:08.1687299Z",
+      "ModifiedBy": "mmaitre@microsoft.com",
+      "DivisionId": "85dd10f4-5484-48fa-b11f-6e6ab07f8d4c"
     },
     {
-      "label": "Central Cloud + AI Platfrom",
-      "value": "Central Cloud + AI Platfrom"
+      "Id": "61faae5b-0c38-4c86-9b87-6d1ec78574c7",
+      "Name": "Cloud Operations + Innovation",
+      "Description": "Cloud Operations + Innovation",
+      "Tags": "MCIO",
+      "BusinessOwners": null,
+      "Status": "Active",
+      "Created": "2015-07-15T22:39:36.3221679Z",
+      "CreatedBy": null,
+      "Modified": "2018-12-04T22:40:12.9170638Z",
+      "ModifiedBy": "rimartin@microsoft.com",
+      "DivisionId": "85dd10f4-5484-48fa-b11f-6e6ab07f8d4c"
     },
     {
-      "label": "Devdiv",
-      "value": "Devdiv"
-    },
-
-    {
-      "label": "COSINE",
-      "value": "COSINE"
-    },
-    {
-      "label": "Developer Service",
-      "value": "Developer Service"
-    }
-  ],
-
-  "Core Service Engg": [
-    {
-      "label": "Core Service Engg1",
-      "value": "Core Service Engg1"
+      "Id": "08e977f7-b4dc-41f3-8d69-f6abc4ecbdae",
+      "Name": "Commerce + Ecosystems",
+      "Description": "Our new Commerce + Ecosystems team has three combined priorities, which correspond to phases of the customer and partner journey:\n\n• Drive discovery and awareness of Microsoft and our ecosystem of products and services. Go where our customers are and engage with online and real-world technical communities, including professional developers, IT operations managers, students, startups, and partners. \n• Drive online engagement. Help customers gain technical proficiency with our products by delivering relevant and powerful content, including product documentation and training, solutions, learning paths, access to events, and compelling technical materials on popular third-party sites, forums, and channels while also creating engagement with our partners through our online assets (Partner Center, marketplaces, and storefronts).\n• Make it easier for customers to buy and do business with us",
+      "Tags": "GAB",
+      "BusinessOwners": null,
+      "Status": "Active",
+      "Created": "2015-12-16T19:04:42.6524547Z",
+      "CreatedBy": "bryonb@microsoft.com",
+      "Modified": "2018-08-16T20:47:52.0968929Z",
+      "ModifiedBy": "andrewj@microsoft.com",
+      "DivisionId": "85dd10f4-5484-48fa-b11f-6e6ab07f8d4c"
     },
     {
-      "label": "Core1",
-      "value": "Core1"
+      "Id": "1a60b8d5-938f-4407-acee-bc49b9609e96",
+      "Name": "COSINE",
+      "Description": "Core OS & Intelligent Edge - we build the platform for Microsoft (the Core OS!), our ambition of how we want it to be deployed in the future (the Intelligent Edge!)\n\nReference: https://osgwiki.com/wiki/WDG_Organizational_Structure#Core_Executives",
+      "Tags": "WDGCORE, OSGCORE, OSG-CORE",
+      "BusinessOwners": null,
+      "Status": "Active",
+      "Created": "2016-02-02T05:42:37.576366Z",
+      "CreatedBy": "bryonb@microsoft.com",
+      "Modified": "2018-07-02T17:03:35.3311123Z",
+      "ModifiedBy": "andrewj@microsoft.com",
+      "DivisionId": "85dd10f4-5484-48fa-b11f-6e6ab07f8d4c"
     },
     {
-      "label": "CE1",
-      "value": "CE1"
-    }
-  ],
-
-  "Business Development": [
-    {
-      "label": "Business Development1",
-      "value": "Business Development1"
+      "Id": "d0b1f8ab-0bee-4045-8cbd-abe25f6529ed",
+      "Name": "DevDiv",
+      "Description": "Developer Division",
+      "Tags": "DevDiv,.NET,Visual Studio ,Developer ",
+      "BusinessOwners": null,
+      "Status": "Active",
+      "Created": "2015-07-15T22:39:36.3221679Z",
+      "CreatedBy": null,
+      "Modified": "2020-01-29T15:52:24.7784498Z",
+      "ModifiedBy": "pchapman@microsoft.com",
+      "DivisionId": "85dd10f4-5484-48fa-b11f-6e6ab07f8d4c"
     },
     {
-      "label": "BDS",
-      "value": "BDS"
+      "Id": "a02c4b1b-4ec7-40b6-96ff-7cb4e804b17d",
+      "Name": "Developer Services",
+      "Description": "C+AI Developer Services Organization. Includes Azure DevOps (formerly known as Visual Studio Team Services) and One Engineering System (1ES)",
+      "Tags": "VSTS ,Azure DevOps ,1ES ",
+      "BusinessOwners": null,
+      "Status": "Active",
+      "Created": "2017-02-21T22:41:16.4671626Z",
+      "CreatedBy": "mmaitre@microsoft.com",
+      "Modified": "2019-12-13T00:58:31.0304351Z",
+      "ModifiedBy": "colinay@microsoft.com",
+      "DivisionId": "85dd10f4-5484-48fa-b11f-6e6ab07f8d4c"
     },
     {
-      "label": "DEV1",
-      "value": "DEV1"
+      "Id": "18e35d52-14e1-48d1-a9fd-a770a87f7808",
+      "Name": "GitHub (C+AI)",
+      "Description": "GitHub supports a community where more than 40 million people learn, share, and work together to build software.\nGitHub is a wholly owned, independently operated subsidiary of the Microsoft Corporation. For all Azure and Service Tree management questions and requests, please contact Grant Holliday at gholliday@github.com.\n\nThis Service Tree Organization inherits ALL of the existing C+AI Platform Service360 KPIs. It should be used for any service which needs to meet Azure Global compliance requirements.",
+      "Tags": "",
+      "BusinessOwners": null,
+      "Status": "Active",
+      "Created": "2020-02-26T18:12:56.9752408Z",
+      "CreatedBy": "daoodk@ntdev.microsoft.com",
+      "Modified": "2020-03-18T01:09:54.4246724Z",
+      "ModifiedBy": "granth@microsoft.com",
+      "DivisionId": "85dd10f4-5484-48fa-b11f-6e6ab07f8d4c"
+    },
+    {
+      "Id": "4551a5cb-c545-4c71-b392-2884ed431aad",
+      "Name": "GitHub (Independent)",
+      "Description": "GitHub supports a community where more than 40 million people learn, share, and work together to build software.\nGitHub is a wholly owned, independently operated subsidiary of the Microsoft Corporation. For all Azure and Service Tree management questions and requests, please contact Grant Holliday at gholliday@github.com.\n\nThis Service Tree Organization has Service 360 policies applied to it, so that ONLY SELECTED KPIs apply.",
+      "Tags": "",
+      "BusinessOwners": null,
+      "Status": "Active",
+      "Created": "2019-12-17T23:52:43.9147933Z",
+      "CreatedBy": "daoodk@ntdev.microsoft.com",
+      "Modified": "2020-03-18T00:24:49.8218359Z",
+      "ModifiedBy": "granth@microsoft.com",
+      "DivisionId": "85dd10f4-5484-48fa-b11f-6e6ab07f8d4c"
+    },
+    {
+      "Id": "6600c204-2193-4414-a555-ecf9b29c6e45",
+      "Name": "Identity",
+      "Description": "",
+      "Tags": null,
+      "BusinessOwners": null,
+      "Status": "Active",
+      "Created": "2015-07-15T22:39:36.3221679Z",
+      "CreatedBy": null,
+      "Modified": "2015-09-04T19:12:03.433Z",
+      "ModifiedBy": "Zekaih@microsoft.com",
+      "DivisionId": "85dd10f4-5484-48fa-b11f-6e6ab07f8d4c"
+    },
+    {
+      "Id": "4522047b-ef22-46e3-a7f4-d6975c88725e",
+      "Name": "Mixed Reality",
+      "Description": "Mixed reality Org",
+      "Tags": "",
+      "BusinessOwners": null,
+      "Status": "Active",
+      "Created": "2020-04-14T21:00:57.5478691Z",
+      "CreatedBy": "sabchi@microsoft.com",
+      "Modified": "2020-04-14T21:00:57.5478691Z",
+      "ModifiedBy": "sabchi@microsoft.com",
+      "DivisionId": "85dd10f4-5484-48fa-b11f-6e6ab07f8d4c"
+    },
+    {
+      "Id": "0924ba4f-4e8e-4f73-93db-036e7dcb87ac",
+      "Name": "Mixed Reality Software and Hardware",
+      "Description": "This organization brings together all speech, vision, HoloLens, MR, and additional perception capabilities in one team.",
+      "Tags": " Analog, Hololens,Oasis,Input ,Computer Vision,IVAS ,Delaware ",
+      "BusinessOwners": null,
+      "Status": "Active",
+      "Created": "2016-05-02T16:43:01.9470565Z",
+      "CreatedBy": "bryonb@microsoft.com",
+      "Modified": "2020-06-08T23:05:56.59285Z",
+      "ModifiedBy": "mpoulson@microsoft.com",
+      "DivisionId": "85dd10f4-5484-48fa-b11f-6e6ab07f8d4c"
+    },
+    {
+      "Id": "d315a2eb-8a80-4c2e-8b34-3cc71a324da5",
+      "Name": "Security",
+      "Description": "C+E Security",
+      "Tags": null,
+      "BusinessOwners": null,
+      "Status": "Active",
+      "Created": "2015-09-04T19:10:44.763Z",
+      "CreatedBy": "Zekaih@microsoft.com",
+      "Modified": "2017-02-21T22:09:43.1574445Z",
+      "ModifiedBy": "mmaitre@microsoft.com",
+      "DivisionId": "85dd10f4-5484-48fa-b11f-6e6ab07f8d4c"
     }
   ]
 }

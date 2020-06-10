@@ -5,6 +5,7 @@ import { Link, Route } from "react-router-dom";
 import Service from "../services/Service";
 import Organization from "../organizations/Organization";
 import Offering from "../offerings/Offering";
+
 export class Navbar extends Component {
   render() {
     return (
@@ -50,9 +51,11 @@ export class Navbar extends Component {
             <input type="text" placeholder="Search.." name="search" />
           </div>
         </div>
-        <Route path="/Service" component={Service} />
+      
         <Route path="/Organization" component={Organization} />
         <Route path="/Offering" component={Offering} />
+        <Route path="/Service" component={Service} />
+      
       </div>
     );
   }

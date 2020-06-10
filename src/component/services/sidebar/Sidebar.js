@@ -2,8 +2,11 @@ import React, { Component } from "react";
 import "./Sidebar.css";
 import Division from "../../../api/Division.json";
 import Organization from "../../../api/Organization.json";
-import Offering from "../../../api/Offering.json";
+import ServiceGroup from "../../../api/ServiceGroup.json";
 import { Link } from "react-router-dom";
+import Hierarchy from "./hierarchy/Hierarchy";
+import HierarchyData from "../../../api/HierarchyData.json";
+
 export class Sidebar extends Component {
   constructor(props) {
     super(props);
@@ -11,16 +14,20 @@ export class Sidebar extends Component {
     this.state = {
       // services: [],
       organization: [],
-      offerings: [],
+      servicegroup: [],
+      hierarchy: [],
     };
   }
 
   fetchOrganization = (e) => {
     let orgValue = e.target.value;
 
-    if (Organization.hasOwnProperty(orgValue))
-      this.setState({ organization: Organization[orgValue] });
-    else {
+    if (Organization.hasOwnProperty("Organization")) {
+      let data = Organization["Organization"].filter(
+        (org) => org.DivisionId === orgValue
+      );
+      this.setState({ organization: data });
+    } else {
       let defOrg = [
         {
           label: "We don't offer Any",
@@ -31,26 +38,31 @@ export class Sidebar extends Component {
     }
   };
 
-  fetchOfferings = (e) => {
+  fetchServiceGroup = (e) => {
     let offValue = e.target.value;
-    if (Offering.hasOwnProperty(offValue))
-      this.setState({ offerings: Offering[offValue] });
-    else {
+    if (ServiceGroup.hasOwnProperty("ServiceGroup")) {
+      let data = ServiceGroup["ServiceGroup"].filter(
+        (org) => org.OrganizationId === offValue
+      );
+      this.setState({ servicegroup: data });
+    } else {
       let defOff = [
         {
           label: "We don't offer Any",
           value: "We don't offer Any",
         },
       ];
-      this.setState({ offerings: defOff });
+      this.setState({ servicegroup: defOff });
     }
   };
 
-  //todo set Services(Division) State
-  // componentDidMount(){
-
-  //   // fetch Services Data and display from webapi
-  // }
+  componentWillMount() {
+    let orgValue = [];
+    Object.keys(HierarchyData).forEach(function (key) {
+      orgValue = [...orgValue, ...HierarchyData[key]];
+    });
+    this.setState({ hierarchy: orgValue });
+  }
 
   render() {
     return (
@@ -59,13 +71,12 @@ export class Sidebar extends Component {
         <label>
           <p>Please select Division</p>
         </label>
-        <br />
 
         <select onChange={this.fetchOrganization}>
           <option value="Please Select">Please Select Division</option>
           {Division.Division.map(
             (e, i) => (
-              <option value={e.value}>{e.label}</option>
+              <option value={e.Id}>{e.Name}</option>
             )
             // <Select key={i} label={e.label} value={e.value} />
           )}
@@ -74,32 +85,35 @@ export class Sidebar extends Component {
         <label>
           <p>Please select Organization</p>
         </label>
-        <br />
 
-        <select onChange={this.fetchOfferings}>
+        <select onChange={this.fetchServiceGroup}>
           <option value="Please Select">Please Select Organization</option>
           {this.state.organization.map(
             (e, i) => (
-              <option value={e.value}>{e.label}</option>
+              <option value={e.Id}>{e.Name}</option>
             )
             // <Select key={i} label={e.label} value={e.value} />
           )}
         </select>
 
         <label>
-          <p>Please select Offerings</p>
+          <p>Please select ServiceGroup</p>
         </label>
-        <br />
 
         <select>
-          <option value="Please Select">Please Select Offering</option>
-          {this.state.offerings.map(
+          <option value="Please Select">Please Select ServiceGroup</option>
+          {this.state.servicegroup.map(
             (e, i) => (
-              <option value={e.value}>{e.label}</option>
+              <option value={e.Id}>{e.Name}</option>
             )
             // <Select key={i} label={e.label} value={e.value} />
           )}
         </select>
+
+        <h3>Hierarchy</h3>
+        <ul id="myUL">
+          <Hierarchy members={this.state.hierarchy} />
+        </ul>
       </div>
     );
   }

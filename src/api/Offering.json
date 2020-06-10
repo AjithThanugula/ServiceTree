@@ -1,38 +1,238 @@
 {
-  "Azure": [
-    {
-      "label": "Autonomous Edge",
-      "value": "Autonomous Edge"
-    },
-    {
-      "label": "Azure Central",
-      "value": "Azure Central"
-    },
-    {
-      "label": "Azure Global",
-      "value": "Azure Global"
-    },
-    {
-      "label": "Azure Data",
-      "value": "Azure Data"
-    }
-  ],
-  "China Cloud Group": [
-    {
-      "label": "Autonomous Edge1",
-      "value": "Autonomous Edge1"
-    },
-    {
-      "label": "Azure Central1",
-      "value": "Azure Central1"
-    },
-    {
-      "label": "Azure Global1",
-      "value": "Azure Global1"
-    },
-    {
-      "label": "Azure Data1",
-      "value": "Azure Data1"
-    }
-  ]
-}
+    "ServiceGroup": [
+      {
+        "Id": "a111527e-233d-4edb-856e-048e240d1947",
+        "Name": "Autonomous Edge",
+        "Description": "Hyper Scale\nIntelligent Edge\nnow Autonomous Edge",
+        "Tags": null,
+        "Status": "Active",
+        "BusinessOwners": null,
+        "Created": "2015-05-14T17:24:28.6447577Z",
+        "CreatedBy": "chetanra@microsoft.com",
+        "Modified": "2019-10-02T18:59:21.4760802Z",
+        "ModifiedBy": "nakarim@microsoft.com",
+        "OrganizationId": "f38ee5f4-d0ee-40a0-8e3f-633d9d9df8b6"
+      },
+      {
+        "Id": "d51527e7-0eff-45ea-b521-e3fe8e580ffa",
+        "Name": "Azure Central",
+        "Description": "Service Group for mapping PC Codes owned by Azure LT to show cross-charged subscriptions",
+        "Tags": "",
+        "Status": "Active",
+        "BusinessOwners": null,
+        "Created": "2019-05-09T18:02:54.1286648Z",
+        "CreatedBy": "maggar@microsoft.com",
+        "Modified": "2019-05-09T18:02:54.1286648Z",
+        "ModifiedBy": "maggar@microsoft.com",
+        "OrganizationId": "f38ee5f4-d0ee-40a0-8e3f-633d9d9df8b6"
+      },
+      {
+        "Id": "7ef8cdf3-8c24-4796-8a90-19f540c5d95b",
+        "Name": "Azure Culture",
+        "Description": "Azure Culture",
+        "Tags": "Azure,Azure Culture Club,culture,culture club",
+        "Status": "Active",
+        "BusinessOwners": null,
+        "Created": "2019-10-16T18:06:00.6965534Z",
+        "CreatedBy": "nakarim@microsoft.com",
+        "Modified": "2019-10-16T18:06:00.6965534Z",
+        "ModifiedBy": "nakarim@microsoft.com",
+        "OrganizationId": "f38ee5f4-d0ee-40a0-8e3f-633d9d9df8b6"
+      },
+      {
+        "Id": "8e6fa8b4-fc36-44a7-a0f2-795b81957344",
+        "Name": "Azure Data",
+        "Description": "Service Group for the Azure Data organization, lead by CVPs Rohan Kumar and Gayle Sheppard. The business owner is set to the engineering and PM leaders - no one else, and those owners do not own anything else - since this is the only way the myriad set of KPIs in S360 work reasonably. Do not add services directly under this SG - instead there are Team Groups per each engineering director and PM director, add services under there.",
+        "Tags": "",
+        "Status": "Active",
+        "BusinessOwners": null,
+        "Created": "2019-07-23T17:43:19.2932516Z",
+        "CreatedBy": "sabchi@microsoft.com",
+        "Modified": "2019-09-09T16:21:50.4571777Z",
+        "ModifiedBy": "sashwin@microsoft.com",
+        "OrganizationId": "f38ee5f4-d0ee-40a0-8e3f-633d9d9df8b6"
+      },
+      {
+        "Id": "73ea1639-dc57-4038-97fc-c3a0e4ca59b9",
+        "Name": "Azure Dedicated Team",
+        "Description": "This group is the all up owner for the purpose built Azure offerings tagged below.",
+        "Tags": "Azure Dedicated,NetApp,HSM,SAP,CRAY,VMWare,Skytap",
+        "Status": "Active",
+        "BusinessOwners": null,
+        "Created": "2018-12-11T19:52:18.2877188Z",
+        "CreatedBy": "erdman@microsoft.com",
+        "Modified": "2019-04-18T21:52:00.0609969Z",
+        "ModifiedBy": "kalyank@microsoft.com",
+        "OrganizationId": "f38ee5f4-d0ee-40a0-8e3f-633d9d9df8b6"
+      },
+      {
+        "Id": "12fe292d-9242-4517-ad72-a5b4bd76bb03",
+        "Name": "Azure Global",
+        "Description": "Azure Global",
+        "Tags": null,
+        "Status": "Active",
+        "BusinessOwners": null,
+        "Created": "2015-09-23T20:39:22.137Z",
+        "CreatedBy": "zekaih@microsoft.com",
+        "Modified": "2018-03-14T23:58:31.5671043Z",
+        "ModifiedBy": "richagem@microsoft.com",
+        "OrganizationId": "f38ee5f4-d0ee-40a0-8e3f-633d9d9df8b6"
+      },
+      {
+        "Id": "9eb0e5bf-5fcf-4ff0-b8a2-31dc58db2317",
+        "Name": "Azure Overlake",
+        "Description": "Azure Overlake",
+        "Tags": "overlake,azure",
+        "Status": "Active",
+        "BusinessOwners": null,
+        "Created": "2019-10-02T18:50:02.5706453Z",
+        "CreatedBy": "nakarim@microsoft.com",
+        "Modified": "2019-10-02T18:50:02.5706453Z",
+        "ModifiedBy": "nakarim@microsoft.com",
+        "OrganizationId": "f38ee5f4-d0ee-40a0-8e3f-633d9d9df8b6"
+      },
+      {
+        "Id": "d8d41d18-4086-431a-b509-04f2d2ed6526",
+        "Name": "AzureCXP",
+        "Description": "Azure Customer Experience.",
+        "Tags": "CXP",
+        "Status": "Active",
+        "BusinessOwners": null,
+        "Created": "2016-02-03T23:43:53.3150102Z",
+        "CreatedBy": "bryonb@microsoft.com",
+        "Modified": "2016-02-03T23:43:53.3150102Z",
+        "ModifiedBy": "bryonb@microsoft.com",
+        "OrganizationId": "f38ee5f4-d0ee-40a0-8e3f-633d9d9df8b6"
+      },
+      {
+        "Id": "cbe0da0e-4730-4412-9de6-04c5171c465c",
+        "Name": "China Cloud Group",
+        "Description": "China Cloud Group",
+        "Tags": "CCG ",
+        "Status": "Active",
+        "BusinessOwners": null,
+        "Created": "2018-10-10T05:49:20.9864057Z",
+        "CreatedBy": "harsing@microsoft.com",
+        "Modified": "2018-10-10T05:49:20.9864057Z",
+        "ModifiedBy": "harsing@microsoft.com",
+        "OrganizationId": "f38ee5f4-d0ee-40a0-8e3f-633d9d9df8b6"
+      },
+      {
+        "Id": "238cf745-1c07-4982-8bf8-bca197b6f530",
+        "Name": "CloudNet",
+        "Description": "Azure Networking",
+        "Tags": null,
+        "Status": "Active",
+        "BusinessOwners": null,
+        "Created": "2015-07-15T22:39:36.3221679Z",
+        "CreatedBy": null,
+        "Modified": "2019-03-28T05:52:38.4023485Z",
+        "ModifiedBy": "danle@microsoft.com",
+        "OrganizationId": "f38ee5f4-d0ee-40a0-8e3f-633d9d9df8b6"
+      },
+      {
+        "Id": "084b42b9-7e8e-4013-9ac1-8c22e1dbefa3",
+        "Name": "Compute",
+        "Description": "Windows Azure Compute is the heart of Windows Azure, providing the online processing time and hosting environments for your applications in the cloud. \nThe Compute Service Group contains a wide range of Products and Services including Core Platform Services,  Management, Deployment, Containers.",
+        "Tags": null,
+        "Status": "Active",
+        "BusinessOwners": null,
+        "Created": "2015-07-15T22:39:36.3221679Z",
+        "CreatedBy": null,
+        "Modified": "2019-02-08T22:42:23.1512707Z",
+        "ModifiedBy": "johbro@winse.microsoft.com",
+        "OrganizationId": "f38ee5f4-d0ee-40a0-8e3f-633d9d9df8b6"
+      },
+      {
+        "Id": "6bac0b93-9575-4677-bb3d-99ba85af4ae0",
+        "Name": "CSCP",
+        "Description": "Capacity, Supply Chain and Provisioning \n\nAzure continues to grow at a very rapid pace with over 50 regions worldwide. We routinely deploy millions of compute cores and exabytes of storage with massive growth still in front of us. We will need to continue to increase our velocity as well as ramp up our decommissioning efforts. Rani Borkar leads a combined team to drive this effort.\n\n•\tSupply Chain and Provisioning: Rani will lead the Azure supply chain and provisioning efforts worldwide.\n•\tCapacity Planning: Aditya Dalmia will report to Rani continuing to drive our capacity planning efforts.\n•\tCore Software: Suri Raman will report to Rani driving convergence and new software efforts at the core of capacity and supply chain.",
+        "Tags": "CSCP ",
+        "Status": "Active",
+        "BusinessOwners": null,
+        "Created": "2018-02-07T16:52:54.113241Z",
+        "CreatedBy": "andrewj@microsoft.com",
+        "Modified": "2018-08-24T16:48:40.4674104Z",
+        "ModifiedBy": "hmasood@microsoft.com",
+        "OrganizationId": "f38ee5f4-d0ee-40a0-8e3f-633d9d9df8b6"
+      },
+      {
+        "Id": "16112abf-8da6-4609-9682-60e7fa1be9e9",
+        "Name": "Emergency Test Service Group",
+        "Description": "Test service group for emergency broadcast. As per the requirement, only service groups and above levels are selectable, we need create a test service group in service tree.",
+        "Tags": "",
+        "Status": "Active",
+        "BusinessOwners": null,
+        "Created": "2018-06-14T22:37:21.8318818Z",
+        "CreatedBy": "andrewj@microsoft.com",
+        "Modified": "2018-06-14T22:37:21.8318818Z",
+        "ModifiedBy": "andrewj@microsoft.com",
+        "OrganizationId": "f38ee5f4-d0ee-40a0-8e3f-633d9d9df8b6"
+      },
+      {
+        "Id": "c2fb386e-916b-4b7a-8aeb-45238f6a8941",
+        "Name": "Hardware Systems and Infrastructure",
+        "Description": "Hardware Systems Group Engineering/Operations",
+        "Tags": "",
+        "Status": "Active",
+        "BusinessOwners": null,
+        "Created": "2018-07-12T21:21:07.7971503Z",
+        "CreatedBy": "andrewj@microsoft.com",
+        "Modified": "2020-02-04T21:33:59.2253101Z",
+        "ModifiedBy": "jreye@microsoft.com",
+        "OrganizationId": "f38ee5f4-d0ee-40a0-8e3f-633d9d9df8b6"
+      },
+      {
+        "Id": "9b546d4d-9930-4c38-b8ff-93fcd5aaa1ab",
+        "Name": "IoT",
+        "Description": "Internet of Things",
+        "Tags": "IoT,Azure IoT,Internet of Things",
+        "Status": "Active",
+        "BusinessOwners": null,
+        "Created": "2016-01-27T19:12:13.1660076Z",
+        "CreatedBy": "bryonb@microsoft.com",
+        "Modified": "2019-05-23T17:52:51.825418Z",
+        "ModifiedBy": "nakarim@microsoft.com",
+        "OrganizationId": "f38ee5f4-d0ee-40a0-8e3f-633d9d9df8b6"
+      },
+      {
+        "Id": "26e13e63-0453-4e02-9a6e-f39d377a83ff",
+        "Name": "Production Infrastructure Engineering",
+        "Description": "Production Infrastructure Engineering (Cloud Engineering Systems Azure Monitoring, Azure Performance, Azure Capacity Insights, Kusto, and Site Reliability Engineering)",
+        "Tags": "Production Infrastructure Engineering,PIE",
+        "Status": "Active",
+        "BusinessOwners": null,
+        "Created": "2018-10-15T04:35:17.4623674Z",
+        "CreatedBy": "harsing@microsoft.com",
+        "Modified": "2019-06-03T23:18:54.6755229Z",
+        "ModifiedBy": "deardien@microsoft.com",
+        "OrganizationId": "f38ee5f4-d0ee-40a0-8e3f-633d9d9df8b6"
+      },
+      {
+        "Id": "7cd628fa-5e68-4194-8aa6-36679109eb9b",
+        "Name": "Storage, Media & Edge",
+        "Description": "Storage Media and Edge group - consists of \n\n1) XStore Storage platform (Files, Disk, Objects, Archive, ADLS Gen 2) \n2) ADLS Gen 1 \n3) Backup\n4) Media\n5) Azure Stack & CPS \n6) Databox, StorSimple, Import/Export \n6) Avere",
+        "Tags": null,
+        "Status": "Active",
+        "BusinessOwners": null,
+        "Created": "2015-07-15T22:39:36.3221679Z",
+        "CreatedBy": null,
+        "Modified": "2018-12-07T21:22:10.6334521Z",
+        "ModifiedBy": "birgitbe@microsoft.com",
+        "OrganizationId": "f38ee5f4-d0ee-40a0-8e3f-633d9d9df8b6"
+      },
+      {
+        "Id": "8a1fbbcf-5ec5-47f4-b9b9-b3c35b0f00f1",
+        "Name": "Telco Cloud",
+        "Description": "Integration of Affirmed Networks) and Metaswitch",
+        "Tags": "",
+        "Status": "Active",
+        "BusinessOwners": null,
+        "Created": "2020-05-22T00:27:12.5282342Z",
+        "CreatedBy": "sabchi@microsoft.com",
+        "Modified": "2020-05-22T00:27:12.5282342Z",
+        "ModifiedBy": "sabchi@microsoft.com",
+        "OrganizationId": "f38ee5f4-d0ee-40a0-8e3f-633d9d9df8b6"
+      }
+    ]
+  }
