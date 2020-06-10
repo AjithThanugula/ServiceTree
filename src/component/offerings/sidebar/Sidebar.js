@@ -1,43 +1,75 @@
 import React, { Component } from "react";
 import "./Sidebar.css";
-import Offering from "../../../api/Offering.json";
-import { Link } from "react-router-dom";
+import OfferingData from "../../../api/OfferingData.json";
+//import Icon from '@material-ui/core/Icon';
+//import { loadCSS } from 'fg-loadcss';
+// import { makeStyles } from '@material-ui/core/styles';
+// import { green } from '@material-ui/core/colors';
 export class Sidebar extends Component {
   constructor(props) {
     super(props);
 
-    this.state = {
-      offerings: [],
-    };
+    this.state = {};
   }
 
-  componentDidMount() {
-    let orgOfferings = [];
-    Object.keys(Offering).forEach(function (key) {
-      orgOfferings = [...orgOfferings, ...Offering[key]];
-    });
-
-    this.setState({ offerings: orgOfferings });
-  }
   render() {
+    const letters = [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F",
+      "G",
+      "H",
+      "I",
+      "J",
+      "K",
+      "L",
+      "M",
+      "N",
+      "O",
+      "P",
+      "Q",
+      "R",
+      "S",
+      "T",
+      "U",
+      "V",
+      "W",
+      "X",
+      "Y",
+      "Z",
+    ];
+
+    const HeadingUL = {
+      margin: "10px 0px 0px 22px",
+      padding: "10px 0px 0px 0px",
+    };
+
     return (
       <div className="sidebar">
-        <Link to="/CreateService">Create New Service</Link>
-
-        <label>
-          <p>Please select Offerings</p>
-        </label>
-        <br />
-
-        <select>
-          <option value="Please Select">Please Select Offering</option>
-          {this.state.offerings.map(
-            (e, i) => (
-              <option value={e.value}>{e.label}</option>
-            )
-            // <Select key={i} label={e.label} value={e.value} />
-          )}
-        </select>
+        <p className="SiderBarHeader">Request a New Offering</p>
+        <button>Previous</button>{" "}
+        <button style={{ marginLeft: "0px" }}>Next</button>
+        <br></br>
+        <div className="alphalink">
+          <ul className="LinkUL">
+            {letters.map((letter) => (
+              <li>{letter}</li>
+            ))}
+          </ul>
+        </div>
+        <div className="innersidebar">
+          {OfferingData.value.map((e, i) => (
+            <ul style={HeadingUL}>
+              <span className="icon">OF</span>
+              <span className="textHeading">
+                {e.Name.length > 15 ? e.Name.substring(0, 15) + "..." : e.Name}
+              </span>
+            </ul>
+          ))}
+        </div>
       </div>
     );
   }
