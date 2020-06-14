@@ -54,6 +54,9 @@
   padding: 16px;
   list-style: none;
 }
+.LinkUL>li{
+  cursor: pointer;
+}
 
 .sidebar > button {
   margin-left: 47px;

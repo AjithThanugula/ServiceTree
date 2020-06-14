@@ -19,7 +19,7 @@ export class HierarchyView extends Component {
     return (
       <Fragment>
         {data.map((member, i) => {
-          console.log("i value" + i);
+         
           return (
             <Fragment>
               {this.hasChildren(member) ? (

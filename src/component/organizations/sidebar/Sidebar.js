@@ -33,12 +33,12 @@ export class Sidebar extends Component {
   };
 
   componentDidMount() {
-    debugger;
+    //debugger;
     let orgValue = [];
-    Object.keys(Organization).forEach(function (key) {
-      orgValue = [...orgValue, ...Organization[key]];
-    });
-
+    // Object.keys(Organization).forEach(function (key) {
+    //   orgValue = [...orgValue, ...Organization[key]];
+    // });
+    orgValue=Organization["Organization"];
     this.setState({ organization: orgValue });
   }
   render() {

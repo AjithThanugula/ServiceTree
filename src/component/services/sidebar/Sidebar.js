@@ -1,18 +1,19 @@
 import React, { Component } from "react";
 import "./Sidebar.css";
-import Division from "../../../api/Division.json";
-import Organization from "../../../api/Organization.json";
-import ServiceGroup from "../../../api/ServiceGroup.json";
-import { Link } from "react-router-dom";
+import { Link, withRouter } from "react-router-dom";
 import Hierarchy from "./hierarchy/Hierarchy";
-import HierarchyData from "../../../api/HierarchyData.json";
-
+import {
+  getDivisionData,
+  getHierarchyData,
+  getOrganizationData,
+  getServiceGroupData,
+} from "../../../api/AjaxCalls/_base";
 export class Sidebar extends Component {
   constructor(props) {
     super(props);
 
     this.state = {
-      // services: [],
+      division: [],
       organization: [],
       servicegroup: [],
       hierarchy: [],
@@ -21,47 +22,57 @@ export class Sidebar extends Component {
 
   fetchOrganization = (e) => {
     let orgValue = e.target.value;
+    let defOrg = [
+      {
+        Id: "We don't offer Any",
+        Name: "We don't offer Any",
+      },
+    ];
+    let orgData = getOrganizationData();
 
-    if (Organization.hasOwnProperty("Organization")) {
-      let data = Organization["Organization"].filter(
-        (org) => org.DivisionId === orgValue
-      );
-      this.setState({ organization: data });
+    if (orgData) {
+      let data = orgData.filter((org) => org.DivisionId === orgValue);
+      this.setState({ organization: data.length > 0 ? data : defOrg });
     } else {
-      let defOrg = [
-        {
-          label: "We don't offer Any",
-          value: "We don't offer Any",
-        },
-      ];
       this.setState({ organization: defOrg });
     }
   };
 
   fetchServiceGroup = (e) => {
     let offValue = e.target.value;
-    if (ServiceGroup.hasOwnProperty("ServiceGroup")) {
-      let data = ServiceGroup["ServiceGroup"].filter(
-        (org) => org.OrganizationId === offValue
-      );
-      this.setState({ servicegroup: data });
+    let defOff = [
+      {
+        Id: "We don't offer Any",
+        Name: "We don't offer Any",
+      },
+    ];
+    let serviceGroup = getServiceGroupData();
+    if (serviceGroup) {
+      let data = serviceGroup.filter((org) => org.OrganizationId === offValue);
+      this.setState({ servicegroup: data.length > 0 ? data : defOff });
     } else {
-      let defOff = [
-        {
-          label: "We don't offer Any",
-          value: "We don't offer Any",
-        },
-      ];
       this.setState({ servicegroup: defOff });
     }
   };
 
+  FetchProfileData = (e) => {
+    debugger;
+    let id = document.getElementById("sGroupId").value;
+    this.props.history.push("/Service/Profile/"+id);
+    // this.props.history.push({
+    //   pathname: "/Profile/" + id,
+    // });
+  };
+
   componentWillMount() {
     let orgValue = [];
-    Object.keys(HierarchyData).forEach(function (key) {
-      orgValue = [...orgValue, ...HierarchyData[key]];
-    });
-    this.setState({ hierarchy: orgValue });
+    // Object.keys(HierarchyData).forEach(function (key) {
+    //   orgValue = [...orgValue, ...HierarchyData[key]];
+    // });
+    orgValue = getHierarchyData();
+    let divData = getDivisionData();
+
+    this.setState({ hierarchy: orgValue, division: divData });
   }
 
   render() {
@@ -74,7 +85,7 @@ export class Sidebar extends Component {
 
         <select onChange={this.fetchOrganization}>
           <option value="Please Select">Please Select Division</option>
-          {Division.Division.map(
+          {this.state.division.map(
             (e, i) => (
               <option value={e.Id}>{e.Name}</option>
             )
@@ -100,7 +111,7 @@ export class Sidebar extends Component {
           <p>Please select ServiceGroup</p>
         </label>
 
-        <select>
+        <select id="sGroupId">
           <option value="Please Select">Please Select ServiceGroup</option>
           {this.state.servicegroup.map(
             (e, i) => (
@@ -109,7 +120,7 @@ export class Sidebar extends Component {
             // <Select key={i} label={e.label} value={e.value} />
           )}
         </select>
-
+        <button onClick={this.FetchProfileData}>Apply</button>
         <h3>Hierarchy</h3>
         <ul id="myUL">
           <Hierarchy members={this.state.hierarchy} />
@@ -119,4 +130,4 @@ export class Sidebar extends Component {
   }
 }
 
-export default Sidebar;
+export default withRouter(Sidebar);

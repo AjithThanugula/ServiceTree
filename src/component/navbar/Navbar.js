@@ -5,6 +5,7 @@ import { Link, Route } from "react-router-dom";
 import Service from "../services/Service";
 import Organization from "../organizations/Organization";
 import Offering from "../offerings/Offering";
+import { Profile } from "../services/content/Profile/Profile";
 
 export class Navbar extends Component {
   render() {
@@ -35,17 +36,7 @@ export class Navbar extends Component {
               <Link to="/Offering">Offering</Link>
             </div>
           </div>
-          <div className="subnav">
-            <button className="subnavbtn">
-              More <i className="fa fa-caret-down"></i>
-            </button>
-            <div className="subnav-content">
-              <a href="#link1">Link 1</a>
-              <a href="#link2">Link 2</a>
-              <a href="#link3">Link 3</a>
-              <a href="#link4">Link 4</a>
-            </div>
-          </div>
+       
           <a href="#contact">Contact</a>
           <div className="search-container">
             <input type="text" placeholder="Search.." name="search" />
@@ -55,7 +46,11 @@ export class Navbar extends Component {
         <Route path="/Organization" component={Organization} />
         <Route path="/Offering" component={Offering} />
         <Route path="/Service" component={Service} />
-      
+          
+       
+         
+        
+       
       </div>
     );
   }

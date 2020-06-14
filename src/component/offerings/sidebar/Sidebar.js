@@ -1,15 +1,34 @@
 import React, { Component } from "react";
 import "./Sidebar.css";
 import OfferingData from "../../../api/OfferingData.json";
-//import Icon from '@material-ui/core/Icon';
-//import { loadCSS } from 'fg-loadcss';
-// import { makeStyles } from '@material-ui/core/styles';
-// import { green } from '@material-ui/core/colors';
+
 export class Sidebar extends Component {
   constructor(props) {
     super(props);
 
-    this.state = {};
+    this.state = {
+      search: "A",
+      filterData: [],
+    };
+  }
+
+  fetchMatchedData(item) {
+    let filterData = [];
+
+    filterData = OfferingData.value.filter(
+      (data) => data.Name.charAt(0).toUpperCase() === item
+    );
+
+    this.setState({ filterData: filterData });
+  }
+  componentDidMount() {
+    let filterData = [];
+
+    filterData = OfferingData.value.filter(
+      (data) => data.Name.charAt(0).toUpperCase() === "A"
+    );
+
+    this.setState({ filterData: filterData });
   }
 
   render() {
@@ -56,12 +75,14 @@ export class Sidebar extends Component {
         <div className="alphalink">
           <ul className="LinkUL">
             {letters.map((letter) => (
-              <li>{letter}</li>
+              <li onClick={this.fetchMatchedData.bind(this, letter)}>
+                {letter}
+              </li>
             ))}
           </ul>
         </div>
         <div className="innersidebar">
-          {OfferingData.value.map((e, i) => (
+          {this.state.filterData.map((e, i) => (
             <ul style={HeadingUL}>
               <span className="icon">OF</span>
               <span className="textHeading">
