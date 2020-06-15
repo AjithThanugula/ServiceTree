@@ -12,17 +12,17 @@ export class Profile extends Component {
     };
   }
   static getDerivedStateFromProps(props, state) {
-    debugger;
+   
     let id = props.match.params.id;
     let data = getServiceGroupData();
-    let serviceGroupData = data.filter((serGroup) => serGroup.Id === "8e6fa8b4-fc36-44a7-a0f2-795b81957344");
+    let serviceGroupData = data.filter((serGroup) => serGroup.Id === id);
 
     return { offering: serviceGroupData };
   }
   
 
   render() {
-    debugger;
+   
     return (
      
        <Fragment>

@@ -4,6 +4,7 @@ import Hierarchy from "../HierarchyData.json";
 import Organization from "../Organization.json";
 import ServiceGroup from "../ServiceGroup.json";
 import Offering from "../OfferingData.json";
+import Subscription from "../Subsciption.json"
 export function getDivisionData() {
   let data = Division.Division;
   return data;
@@ -28,3 +29,9 @@ export function getOfferingsData() {
   let data = Offering.value;
   return data;
 }
+
+export function getSubscriptionsData() {
+  let data = Subscription.Subscription;
+  return data;
+}
+

@@ -4,11 +4,15 @@ import { Link, withRouter } from "react-router-dom";
 
 export class Content extends Component {
   render() {
-    debugger;
+  
     return (
       <Fragment>
+          <div id="linkdiv">
+        <Link to="/Service">Go to Service Home</Link>
+        </div>
         <h1>Service Profile Name</h1>
         <h1>{this.props.id}</h1>
+      
         <ul id="ul">
           <li className="li">
             <Link to={`/Service/Profile/` + this.props.match.params.id}>
@@ -25,7 +29,7 @@ export class Content extends Component {
               Subscription
             </Link>
           </li>
-          <li className="li">
+          {/* <li className="li">
             <Link to={`/Service/Metadata/` + this.props.match.params.id}>
               Metadata
             </Link>
@@ -41,7 +45,7 @@ export class Content extends Component {
             <Link to={`/Service/Certificate/` + this.props.match.params.id}>
               Certificate
             </Link>
-          </li>
+          </li> */}
           <li className="li">
             <Link to={`/Service/History/` + this.props.match.params.id}>
               History

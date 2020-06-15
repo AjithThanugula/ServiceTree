@@ -56,7 +56,7 @@ export class Sidebar extends Component {
   };
 
   FetchProfileData = (e) => {
-    debugger;
+   
     let id = document.getElementById("sGroupId").value;
     this.props.history.push("/Service/Profile/"+id);
     // this.props.history.push({
