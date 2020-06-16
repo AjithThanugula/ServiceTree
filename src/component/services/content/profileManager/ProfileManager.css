@@ -1,6 +1,6 @@
 #leftbox { 
     float:left;  
-    background:Red; 
+    background:lightgrey; 
     width:40%; 
     height:280px; 
     margin-right: 30px;
@@ -9,7 +9,7 @@
 
 #rightbox{ 
     float:left; 
-    background:green; 
+    background:lightgray; 
     width:40%; 
     height:280px; 
 } 

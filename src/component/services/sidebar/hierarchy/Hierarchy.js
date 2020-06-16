@@ -1,5 +1,6 @@
 import React, { Component, Fragment } from "react";
-
+import './Hierarchy.css'
+import {withRouter} from 'react-router-dom'
 export class HierarchyView extends Component {
   constructor(props) {
     super(props);
@@ -8,10 +9,10 @@ export class HierarchyView extends Component {
   hasChildren(member) {
     return member.Children.length === 0 ? false : true;
   }
-
+ 
   expand = (e) => {
-    e.parentElement.querySelector(".nested").classList.toggle("active");
-    e.classList.toggle("caret-down");
+  
+ this.props.history.push('/Service/Profile/'+e.ServiceGroupId,{member:e})
   };
 
   render() {
@@ -19,12 +20,12 @@ export class HierarchyView extends Component {
     return (
       <Fragment>
         {data.map((member, i) => {
-         
+          
           return (
             <Fragment>
               {this.hasChildren(member) ? (
-                <li>
-                  <span className="caret" onClick={this.expand}>
+                <li className="hierarchyli"  onClick={()=>this.expand(member)}>
+                  <span className="caret" >
                     {member.Name}
                   </span>
                   <ul className="nested">
@@ -32,7 +33,7 @@ export class HierarchyView extends Component {
                   </ul>
                 </li>
               ) : (
-                <li>{member.Name}</li>
+                <li className="hierarchyli"  onClick={()=>this.expand(member)}>{member.Name}</li>
               )}
             </Fragment>
           );
@@ -42,4 +43,4 @@ export class HierarchyView extends Component {
   }
 }
 
-export default HierarchyView;
+export default withRouter(HierarchyView);

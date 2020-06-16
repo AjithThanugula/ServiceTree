@@ -21,7 +21,7 @@ export class Service extends Component {
     return (
       <div>
         <Sidebar />
-        <div className="content">
+        <div className="servicecontent">
           <Switch>
             <Route exact path="/Service/Profile/:id" component={Profile} />
             <Route

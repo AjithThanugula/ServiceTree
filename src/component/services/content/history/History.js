@@ -11,54 +11,47 @@ export class History extends Component {
     this.state = {
       id: "",
       data: this.getData(),
-     
+      member: {},
     };
   }
 
   getData() {
-   let data=null;
-   return data;
+    let data = null;
+    return data;
   }
   static getDerivedStateFromProps(props, state) {
     let id = props.match.params.id;
 
-    return { id: id };
+    return { id: id, member: props.location.state.member };
   }
 
   render() {
     return (
       <Fragment>
-        <Content id={"Ajith"}></Content>
+        <Content member={this.state.member}></Content>
 
-      
-      <br></br>
-          <DataGrid
-            
-            data={this.state.data}
-            style={{ height: "auto" }}
-          >
-            <GridColumn
-              sortable
-              field="Id"
-              title="ChangeDate"
-              width="22%"
-            ></GridColumn>
-            <GridColumn sortable field="Cloud" title="ChangedBy"></GridColumn>
-            <GridColumn
-              sortable
-              field="Environment"
-              title="Action"
-              align="left"
-            ></GridColumn>
-            <GridColumn
-              sortable
-              field="Status"
-              title="Details"
-              align="left"
-            ></GridColumn>
-        
-          </DataGrid>
-       
+        <br></br>
+        <DataGrid data={this.state.data} style={{ height: "auto" }}>
+          <GridColumn
+            sortable
+            field="Id"
+            title="ChangeDate"
+            width="22%"
+          ></GridColumn>
+          <GridColumn sortable field="Cloud" title="ChangedBy"></GridColumn>
+          <GridColumn
+            sortable
+            field="Environment"
+            title="Action"
+            align="left"
+          ></GridColumn>
+          <GridColumn
+            sortable
+            field="Status"
+            title="Details"
+            align="left"
+          ></GridColumn>
+        </DataGrid>
       </Fragment>
     );
   }

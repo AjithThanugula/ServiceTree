@@ -11,6 +11,7 @@ export class Subscription extends Component {
     this.state = {
       id: "",
       data: this.getData(),
+      member: {},
       status: [
         { value: null, text: "All" },
         { value: "P", text: "P" },
@@ -20,19 +21,19 @@ export class Subscription extends Component {
   }
 
   getData() {
-   let data=getSubscriptionsData()
-   return data;
+    let data = getSubscriptionsData();
+    return data;
   }
   static getDerivedStateFromProps(props, state) {
     let id = props.match.params.id;
 
-    return { id: id };
+    return { id: id, member: props.location.state.member };
   }
 
   render() {
     return (
       <Fragment>
-        <Content id={"Ajith"}></Content>
+        <Content member={this.state.member}></Content>
 
         <h2>Azure Subscription:</h2>
         <p>
@@ -52,49 +53,44 @@ export class Subscription extends Component {
           Or if you have large number of subscriptions,You can download as csv
           from kusto.
         </p>
-   
-      <br></br>
-      <br></br>
-      <p>Number Of Associates Subscriptions:{this.state.data.length}</p>
-      <br></br>
-          <DataGrid
-            filterable
-            data={this.state.data}
-            style={{ height: "auto" }}
-          >
-            <GridColumn
-              sortable
-              field="Id"
-              title="Subsription Id"
-              width="22%"
-            ></GridColumn>
-            <GridColumn sortable field="Cloud" title="Cloud"></GridColumn>
-            <GridColumn
-              sortable
-              field="Environment"
-              title="Environment"
-              align="left"
-            ></GridColumn>
-            <GridColumn
-              sortable
-              field="Status"
-              title="Status"
-              align="left"
-            ></GridColumn>
-            <GridColumn
-              sortable
-              field="Notes"
-              title="Notes"
-              width="30%"
-            ></GridColumn>
-            <GridColumn
-              remoteFilter
-              field="status"
-              title="Actions"
-              align="center"
-            />
-          </DataGrid>
-       
+
+        <br></br>
+        <br></br>
+        <p>Number Of Associates Subscriptions:{this.state.data.length}</p>
+        <br></br>
+        <DataGrid filterable data={this.state.data} style={{ height: "auto" }}>
+          <GridColumn
+            sortable
+            field="Id"
+            title="Subsription Id"
+            width="22%"
+          ></GridColumn>
+          <GridColumn sortable field="Cloud" title="Cloud"></GridColumn>
+          <GridColumn
+            sortable
+            field="Environment"
+            title="Environment"
+            align="left"
+          ></GridColumn>
+          <GridColumn
+            sortable
+            field="Status"
+            title="Status"
+            align="left"
+          ></GridColumn>
+          <GridColumn
+            sortable
+            field="Notes"
+            title="Notes"
+            width="30%"
+          ></GridColumn>
+          <GridColumn
+            remoteFilter
+            field="status"
+            title="Actions"
+            align="center"
+          />
+        </DataGrid>
       </Fragment>
     );
   }

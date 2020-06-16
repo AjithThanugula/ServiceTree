@@ -1,47 +1,51 @@
-.sidebar {
+.servicesidebar {
+  float:left;  
   margin: 0;
   padding: 0;
-  width: 300px;
+  width:20%; 
   background-color: #f1f1f1;
-  position: fixed;
+ 
   height: 100%;
-  overflow: auto;
+  
 }
 
-.sidebar a {
+.servicesidebar a {
   display: block;
   color: black;
   padding: 16px;
   text-decoration: none;
 }
 
-.sidebar a.active {
+.servicesidebar a.active {
   background-color: #4caf50;
   color: white;
 }
 
-.sidebar a:hover:not(.active) {
+.servicesidebar a:hover:not(.active) {
   background-color: #555;
   color: white;
 }
 
+
 @media screen and (max-width: 700px) {
-  .sidebar {
+  .servicesidebar {
     width: 100%;
     height: auto;
     position: relative;
   }
-  .sidebar a {
+  .servicesidebar a {
     float: left;
   }
-  div.content {
+  div.servicecontent {
     margin-left: 0;
   }
 }
 
 @media screen and (max-width: 400px) {
-  .sidebar a {
+  .servicesidebar a {
     text-align: center;
     float: none;
   }
 }
+
+

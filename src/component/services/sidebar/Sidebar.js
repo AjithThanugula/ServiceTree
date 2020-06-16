@@ -58,13 +58,6 @@ export class Sidebar extends Component {
   FetchProfileData = (e) => {
    
     let id = document.getElementById("sGroupId").value;
-    this.props.history.push("/Service/Profile/"+id);
-    // this.props.history.push({
-    //   pathname: "/Profile/" + id,
-    // });
-  };
-
-  componentWillMount() {
     let orgValue = [];
     // Object.keys(HierarchyData).forEach(function (key) {
     //   orgValue = [...orgValue, ...HierarchyData[key]];
@@ -73,17 +66,33 @@ export class Sidebar extends Component {
     let divData = getDivisionData();
 
     this.setState({ hierarchy: orgValue, division: divData });
+   // this.props.history.push("/Service/Profile/"+id);
+    // this.props.history.push({
+    //   pathname: "/Profile/" + id,
+    // });
+  };
+
+  componentWillMount() {
+    // let orgValue = [];
+    // // Object.keys(HierarchyData).forEach(function (key) {
+    // //   orgValue = [...orgValue, ...HierarchyData[key]];
+    // // });
+    // orgValue = getHierarchyData();
+    let divData = getDivisionData();
+
+    this.setState({ division: divData });
   }
 
   render() {
     return (
-      <div className="sidebar">
+      <div className="servicesidebar">
+      
         <Link to="/CreateService">Create New Service</Link>
         <label>
           <p>Please select Division</p>
         </label>
 
-        <select onChange={this.fetchOrganization}>
+        <select className="select" onChange={this.fetchOrganization}>
           <option value="Please Select">Please Select Division</option>
           {this.state.division.map(
             (e, i) => (
@@ -97,7 +106,7 @@ export class Sidebar extends Component {
           <p>Please select Organization</p>
         </label>
 
-        <select onChange={this.fetchServiceGroup}>
+        <select className="select" onChange={this.fetchServiceGroup}>
           <option value="Please Select">Please Select Organization</option>
           {this.state.organization.map(
             (e, i) => (
@@ -111,7 +120,7 @@ export class Sidebar extends Component {
           <p>Please select ServiceGroup</p>
         </label>
 
-        <select id="sGroupId">
+        <select id="sGroupId" className="select">
           <option value="Please Select">Please Select ServiceGroup</option>
           {this.state.servicegroup.map(
             (e, i) => (
@@ -125,6 +134,8 @@ export class Sidebar extends Component {
         <ul id="myUL">
           <Hierarchy members={this.state.hierarchy} />
         </ul>
+
+        
       </div>
     );
   }
