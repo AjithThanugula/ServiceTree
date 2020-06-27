@@ -1,8 +1,8 @@
 import React, { Component, Fragment } from "react";
-import Content from "../Content";
+import Content from "../content";
 import { withRouter } from "react-router-dom";
-import { getServiceGroupData } from "../../../../api/AjaxCalls/_base";
-import "./Profile.css";
+import { getServiceGroupData } from "../../../../api/ajaxCalls/_base";
+import "./profile.css";
 export class Profile extends Component {
   constructor(props) {
     super(props);

@@ -1,5 +1,5 @@
 import React, { Component, Fragment } from "react";
-import './Hierarchy.css'
+import './hierarchy.css'
 import {withRouter} from 'react-router-dom'
 export class HierarchyView extends Component {
   constructor(props) {

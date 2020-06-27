@@ -1,0 +1,33 @@
+.heading {
+  color: rgb(4, 110, 4);
+}
+.onBoardingMain {
+  width: 98%;
+  margin: 20px;
+  background-color: #fef9e7;
+}
+
+.onBoard {
+  width: 98%;
+  height: 100%;
+  padding-left: 100px;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  padding-bottom: 400px;
+  margin: 20px;
+}
+
+.onBoardLabel {
+  float: left;
+  padding: 30px;
+  margin: 30px;
+  border: 2px solid black;
+  color: #00ced1;
+  border:none !important;
+  width: 250px;
+  background-color: #FFFFFF;
+}
+
+.srbutton{
+    width: 80px;
+}

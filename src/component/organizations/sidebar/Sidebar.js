@@ -1,11 +1,11 @@
 import React, { Component } from "react";
-import "./Sidebar.css";
-import Organization from "../../../api/Organization.json";
-import Offering from "../../../api/Offering.json";
+import "./sidebar.css";
+import Organization from "../../../api/organization.json";
+import Offering from "../../../api/offering.json";
 import { Link,Route } from "react-router-dom";
-import NewService from "../../createservice/CreateService";
 
-import Modal from '../../createservice/Modal'
+
+import Modal from '../../createService/modal'
 export class Sidebar extends Component {
   constructor(props) {
     super(props);

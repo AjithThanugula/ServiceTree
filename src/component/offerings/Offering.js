@@ -1,22 +1,41 @@
 import React, { Component } from "react";
-import "./Offering.css";
-import Sidebar from "./sidebar/Sidebar";
+import { Route, Redirect, Switch } from "react-router-dom";
+import "./offering.css";
+import Sidebar from "./sidebar/sidebar";
+import Home from './content/home'
+import History from './/content/history/History'
+import Profile from './content/profile/profile'
+import Metadata from './content/metadata/metadata'
+import ServiceMapping from './content/serviceMapping/serviceMapping'
 export class Offering extends Component {
   render() {
     return (
-      <div>
+      <div> 
         <Sidebar />
-        <div className="content">
-          <h2>Offering</h2>
-          <p>
-            This example use media queries to transform the sidebar to a top
-            navigation bar when the screen size is 700px or less.
-          </p>
-          <p>
-            We have also added a media query for screens that are 400px or less,
-            which will vertically stack and center the navigation links.
-          </p>
-          <h3>Resize the browser window to see the effect.</h3>
+        <div className="offeringcontent">
+        
+            <Route  path="/Offering/Profile/:id" component={Profile} />
+          
+            <Route
+              
+              path="/Offering/ServiceMapping/:id"
+              render={() => <ServiceMapping {...this.props} />}
+            />
+        
+            <Route exact path="/Offering/History/:id" component={History} />
+            <Route
+              
+              path="/Offering/Metadata/:id"
+              component={Metadata}
+            />
+            <Route
+            exact
+              path="/Offering"
+              render={() => {
+                return <Home {...this.props}></Home>;
+              }}
+            />
+         
         </div>
       </div>
     );

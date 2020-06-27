@@ -1,10 +1,10 @@
 import React, { Component } from "react";
-import "./Organization.css";
-import Sidebar from "./sidebar/Sidebar";
-import NewService from "../createservice/CreateService";
+import "./organization.css";
+import Sidebar from "./sidebar/sidebar";
+import NewService from "../createService/createService";
 import {withRouter} from 'react-router-dom'
 import {Link,Route} from 'react-router-dom'
-import Modal from '../createservice/Modal'
+import Modal from '../createService/modal'
 export class Organization extends Component {
   render() {
     return (

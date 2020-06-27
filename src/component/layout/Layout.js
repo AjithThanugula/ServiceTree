@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
-import  './Layout.css'
-import Navbar from '../navbar/Navbar'
+import  './layout.css'
+import Navbar from '../navbar/navbar'
 export class Layout extends Component {
     render() {
         return (

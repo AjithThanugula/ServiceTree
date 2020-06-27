@@ -1,10 +1,10 @@
 import React from "react";
-import Division from "../Division.json";
-import Hierarchy from "../HierarchyData.json";
-import Organization from "../Organization.json";
-import ServiceGroup from "../ServiceGroup.json";
-import Offering from "../OfferingData.json";
-import Subscription from "../Subsciption.json"
+import Division from "../division.json";
+import Hierarchy from "../hierarchyData.json";
+import Organization from "../organization.json";
+import ServiceGroup from "../serviceGroup.json";
+import Offering from "../offeringData.json";
+import Subscription from "../subsciption.json"
 export function getDivisionData() {
   let data = Division.Division;
   return data;

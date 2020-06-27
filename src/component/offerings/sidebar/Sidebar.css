@@ -1,31 +1,33 @@
-.sidebar {
-  margin: 0;
-  padding: 0;
-  width: 300px;
-  background-color: #f1f1f1;
-  position: fixed;
-  height: 100%;
-  overflow: auto;
-}
 
-.sidebar a {
+.offeringsidebar{
+height: 800px;
+width: 20%;
+/* position: fixed; */
+/* z-index: 1; */
+top: 2;
+left: 0; 
+float:left;  
+overflow-x: hidden;
+
+}
+.offeringsidebar a {
   display: block;
   color: black;
   padding: 16px;
   text-decoration: none;
 }
 
-.sidebar a.active {
+.offeringsidebar a.active {
   background-color: #4caf50;
   color: white;
 }
 
-.sidebar a:hover:not(.active) {
+.offeringsidebar a:hover:not(.active) {
   background-color: #555;
   color: white;
 }
 
-.icon {
+.icon{
   width: 15px;
   height: 15px;
   border-radius: 24px;
@@ -35,49 +37,49 @@
   font-size: 11px;
   font-family: monospace;
 }
-.textHeading {
+/* .textHeading{
   padding: 5px;
-  font-size: 13px;
-}
-.innersidebar {
-  width: 155px;
+    font-size: 13px;
+} */
+.innersidebar{
+  width: 100%;
   background-color: white;
   padding-top: 13px;
   margin-left: 27px;
 }
-.alphalink {
+.alphalink{
   float: left;
 }
 
-.alphalink > ul {
+.alphalink > ul{
   margin: 0px;
-  padding: 16px;
-  list-style: none;
+padding: 16px;
+list-style: none;
 }
 
-.sidebar > button {
+.offeringsidebar > button{
   margin-left: 47px;
-  background-color: greeb;
-  background-color: #094a3e;
-  border-block-end-style: none;
-  color: white;
+    background-color: greeb;
+    background-color: #094a3e;
+    border-block-end-style: none;
+    color: white;
 }
-.SiderBarHeader {
+.SiderBarHeader{
   width: auto;
-  height: 20px;
-  background-color: darkgrey;
-  padding: 10px;
-  font-size: 14px;
-  color: #3972b9;
+    background-color: darkgrey;
+    padding: 10px;
+    font-size: 14px;
+    color: #3972b9;
 }
+
 
 @media screen and (max-width: 700px) {
-  .sidebar {
+  .offeringsidebar {
     width: 100%;
     height: auto;
     position: relative;
   }
-  .sidebar a {
+  .offeringsidebar a {
     float: left;
   }
   div.content {
@@ -86,7 +88,7 @@
 }
 
 @media screen and (max-width: 400px) {
-  .sidebar a {
+  .offeringsidebar a {
     text-align: center;
     float: none;
   }

@@ -1,12 +1,13 @@
 import React, { Component } from "react";
-import "./Navbar.css";
+import "./navbar.css";
 import logo from "../../assests/images/stree1.png";
 import { Link, Route } from "react-router-dom";
-import Service from "../services/Service";
-import Organization from "../organizations/Organization";
-import Offering from "../offerings/Offering";
-import { Profile } from "../services/content/Profile/Profile";
-
+import Service from "../services/service";
+import Organization from "../organizations/organization";
+import Offering from "../offerings/offering";
+import OnBoarding from '../more/onBoarding/onBoarding'
+import SubscriptionRegistration from '../more/subscriptionRegistration/subscriptionRegistration'
+import MetadataDefinition from '../more/metadataDefinition/metadataDefinition'
 export class Navbar extends Component {
   render() {
     return (
@@ -37,7 +38,16 @@ export class Navbar extends Component {
             </div>
           </div>
        
-          <a href="#contact">Contact</a>
+          <div className="subnav">
+            <button className="subnavbtn">
+              More <i className="fa fa-caret-down"></i>
+            </button>
+            <div className="subnav-content">
+              <Link to="/OnBoarding">OnBoarding</Link>
+              <Link to="/SubscriptionRegistration">Subscription Registration</Link>
+              <Link to="/MetadataDefinition">Metadata Definitions</Link>
+            </div>
+          </div>
           <div className="search-container">
             <input type="text" placeholder="Search.." name="search" />
           </div>
@@ -46,6 +56,9 @@ export class Navbar extends Component {
         <Route path="/Organization" component={Organization} />
         <Route path="/Offering" component={Offering} />
         <Route path="/Service" component={Service} />
+        <Route path="/OnBoarding" component={OnBoarding} />
+        <Route path="/SubscriptionRegistration" component={SubscriptionRegistration} />
+        <Route path="/MetadataDefinition" component={MetadataDefinition} />
           
        
          

@@ -1,13 +1,13 @@
 import React, { Component } from "react";
-import "./Sidebar.css";
+import "./sidebar.css";
 import { Link, withRouter } from "react-router-dom";
-import Hierarchy from "./hierarchy/Hierarchy";
+import Hierarchy from "./hierarchy/hierarchy";
 import {
   getDivisionData,
   getHierarchyData,
   getOrganizationData,
   getServiceGroupData,
-} from "../../../api/AjaxCalls/_base";
+} from "../../../api/ajaxCalls/_base";
 export class Sidebar extends Component {
   constructor(props) {
     super(props);
@@ -83,7 +83,7 @@ export class Sidebar extends Component {
     this.setState({ division: divData });
   }
 
-  render() {
+  render() { 
     return (
       <div className="servicesidebar">
       

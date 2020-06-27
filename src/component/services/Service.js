@@ -1,12 +1,12 @@
 import React, { Component, Fragment } from "react";
-import "./Service.css";
-import Sidebar from "./sidebar/Sidebar";
-import Profile from "./content/Profile/Profile";
+import "./service.css";
+import Sidebar from "./sidebar/sidebar";
+import Profile from "./content/profile/profile";
 import { Route, Redirect, Switch } from "react-router-dom";
-import Home from "./Home";
-import Subscription from "./content/subscription/Subscription";
-import History from "./content/history/History";
-import ProfileManager  from "./content/profileManager/ProfileManager";
+import Home from "./home";
+import Subscription from "./content/subscription/subscription";
+import History from "./content/history/history";
+import ProfileManager  from "./content/profileManager/profileManager";
 export class Service extends Component {
   constructor(props) {
     super(props);
@@ -14,11 +14,11 @@ export class Service extends Component {
     this.state = {
       render: "false",
     };
-  }
+  } 
 
   render() {
     
-    return (
+    return ( 
       <div>
         <Sidebar />
         <div className="servicecontent">

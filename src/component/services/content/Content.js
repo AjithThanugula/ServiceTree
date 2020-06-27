@@ -1,5 +1,5 @@
 import React, { Component, Fragment } from "react";
-import "./Content.css";
+import "./content.css";
 import { NavLink, withRouter } from "react-router-dom";
 
 export class Content extends Component {
@@ -21,8 +21,7 @@ export class Content extends Component {
                 state: { member: this.props.member },
               }}
             >
-              {" "}
-              Profile{" "}
+              Profile
             </NavLink>
           </li>
           <li className="li">
@@ -34,8 +33,7 @@ export class Content extends Component {
                 state: { member: this.props.member },
               }}
             >
-              {" "}
-              Profile Manager{" "}
+              Profile Manager
             </NavLink>
           </li>
           <li className="li">
@@ -46,8 +44,7 @@ export class Content extends Component {
                 state: { member: this.props.member },
               }}
             >
-              {" "}
-              Subscription{" "}
+              Subscription
             </NavLink>
           </li>
           {/* <li className="li">
@@ -75,8 +72,7 @@ export class Content extends Component {
                 state: { member: this.props.member },
               }}
             >
-              {" "}
-              History{" "}
+              History
             </NavLink>
           </li>
         </ul>

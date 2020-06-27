@@ -1,7 +1,7 @@
 import React, { Component, Fragment } from "react";
-import Content from "../Content";
+import Content from "../content";
 import { withRouter } from "react-router-dom";
-import "./ProfileManager.css";
+import "./profileManager.css";
 
 export class ProfileManager extends Component {
   constructor(props) {

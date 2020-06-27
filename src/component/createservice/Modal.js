@@ -1,6 +1,6 @@
 import React  from 'react'
 import {Link} from 'react-router-dom'
-import './Modal.css'
+import './modal.css'
 export class Modal extends React.Component {
   
       render() {
