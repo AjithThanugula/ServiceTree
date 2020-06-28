@@ -5296,7 +5296,7 @@
     {
       "Id": "edeaa2a5-b2f6-4c34-8a4f-8bdb44b50b6e",
       "Name": "Power Apps",
-      "Description": "Make sophisticated business apps that combine the automation of Microsoft Flow and analytics from Power BI. Create apps quickly without writing code, and share them with your team or organization across devices. \nBuild apps that use the Microsoft Common Data Model to capture and organize business data in a central cloud location. And seamlessly extend PowerApps with Azure services.\n\nNote: Mapping portal services as POR is to have this become a feature of PowerApps in Va.",
+      "Description": "Make sophisticated business apps that combine the automation of Microsoft Flow and analytics from Power BI. Create apps quickly without writing code, and share them with your team or organization across devices.\nBuild apps that use the Microsoft Common Data Model to capture and organize business data in a central cloud location. And seamlessly extend PowerApps with Azure services.\n\nNote: Mapping portal services as POR is to have this become a feature of PowerApps in Va.",
       "Tags": null,
       "Created": "2016-09-27T18:28:50.6993595Z",
       "CreatedBy": "cklepper@microsoft.com",
