@@ -66,18 +66,11 @@ export class Sidebar extends Component {
     let divData = getDivisionData();
 
     this.setState({ hierarchy: orgValue, division: divData });
-    // this.props.history.push("/Service/Profile/"+id);
-    // this.props.history.push({
-    //   pathname: "/Profile/" + id,
-    // });
+  
   };
 
   componentWillMount() {
-    // let orgValue = [];
-    // // Object.keys(HierarchyData).forEach(function (key) {
-    // //   orgValue = [...orgValue, ...HierarchyData[key]];
-    // // });
-    // orgValue = getHierarchyData();
+ 
     let divData = getDivisionData();
 
     this.setState({ division: divData });

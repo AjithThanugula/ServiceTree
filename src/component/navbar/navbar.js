@@ -14,7 +14,7 @@ export class Navbar extends Component {
       <div>
         <div className="navbar">
           <a href="#home">
-            {" "}
+           
             <img src={logo} alt="Logo" />
           </a>
           <div className="subnav">
@@ -37,7 +37,7 @@ export class Navbar extends Component {
               <Link to="/OfferingModel">Offering</Link>
             </div>
           </div>
-       
+
           <div className="subnav">
             <button className="subnavbtn">
               More <i className="fa fa-caret-down"></i>
@@ -51,19 +51,19 @@ export class Navbar extends Component {
           <div className="search-container">
             <input type="text" placeholder="Search.." name="search" />
           </div>
-        </div> 
-      
+        </div>
+
         <Route path="/OrganizationModel" component={OrganizationModel} />
         <Route path="/OfferingModel" component={OfferingModel} />
         <Route path="/ServiceModel" component={ServiceModel} />
         <Route path="/OnBoarding" component={OnBoarding} />
         <Route path="/SubscriptionRegistration" component={SubscriptionRegistration} />
         <Route path="/MetadataDefinition" component={MetadataDefinition} />
-          
-       
-         
-        
-       
+
+
+
+
+
       </div>
     );
   }

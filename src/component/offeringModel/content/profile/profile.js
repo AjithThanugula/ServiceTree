@@ -21,7 +21,7 @@ export class Profile extends Component {
      else
      data=getProductSKUData();
     let pData = data.filter((serGroup) => serGroup.Id === id);
-
+//TODO implement the same for feature,Division
     return { profileData: pData ,tab: props.location.state.tab};
   }
   

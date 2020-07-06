@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Route,Switch } from "react-router-dom";
+import { Route, Switch } from "react-router-dom";
 import "./offeringModel.css";
 import Sidebar from "./sidebar/sidebar";
 import Home from './home'
@@ -15,25 +15,20 @@ export class offeringModel extends Component {
       <div>
         <Sidebar />
         <div className="offeringcontent">
-<Switch>
+          <Switch>
+            <Route path={absolutePath + "Offering/Profile/:id"} render={() => <Profile tab="Offering" />} />
+            <Route path={absolutePath + "Offering/ServiceMapping/:id"} component={ServiceMapping} />
+            <Route exact path={absolutePath + "Offering/History/:id"} component={History} />
+            <Route path={absolutePath + "Offering/Metadata/:id"} component={Metadata} />
 
 
-
- 
-
-<Route path={absolutePath + "Offering/Profile/:id"}  render={() => <Profile tab="Offering" />} />
-          <Route path={absolutePath + "Offering/ServiceMapping/:id"} render={() => <ServiceMapping {...this.props} />} />
-          <Route exact path={absolutePath + "Offering/History/:id"} component={History} />
-          <Route path={absolutePath + "Offering/Metadata/:id"} component={Metadata} />
-
-          
-          <Route path={absolutePath + "ProductSku/Profile/:id"} render={() => <Profile tab="ProductSku" />} />
-          <Route path={absolutePath + "ProductSku/ServiceMapping/:id"} render={() => <ServiceMapping {...this.props} />} />
-          <Route exact path={absolutePath + "ProductSku/History/:id"} component={History} />
-          <Route path={absolutePath + "ProductSku/Metadata/:id"} component={Metadata} />
+            <Route path={absolutePath + "ProductSku/Profile/:id"} render={() => <Profile tab="ProductSku" />} />
+            <Route path={absolutePath + "ProductSku/ServiceMapping/:id"} component={ServiceMapping}/>
+            <Route exact path={absolutePath + "ProductSku/History/:id"} component={History} />
+            <Route path={absolutePath + "ProductSku/Metadata/:id"} component={Metadata} />
 
 
-          {/*      
+            {/*      
       
 <Route  path={absolutePath+"Profile/:id"} component={Profile} />
 <Route path={absolutePath+"ServiceMapping/:id"} render={() => <ServiceMapping {...this.props} />} />
@@ -42,7 +37,7 @@ export class offeringModel extends Component {
 
 
 
-          <Route exact path="/OfferingModel" render={() => { return <Home {...this.props}></Home>; }} />
+            <Route exact path="/OfferingModel" render={() => { return <Home {...this.props}></Home>; }} />
           </Switch>
         </div>
       </div>

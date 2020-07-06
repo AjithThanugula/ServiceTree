@@ -8,13 +8,7 @@ import Subscription from "./content/subscription/subscription";
 import History from "./content/history/history";
 import ProfileManager  from "./content/profileManager/profileManager";
 export class Service extends Component {
-  constructor(props) {
-    super(props);
 
-    this.state = {
-      render: "false",
-    };
-  }  
 
   render() {
     const absolutepath="/ServiceModel/"

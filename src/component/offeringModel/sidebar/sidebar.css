@@ -10,6 +10,16 @@ float:left;
 overflow-x: hidden;
 
 }
+
+.HeadingUL1 {
+  margin: 10px 0px 0px 40px;
+  padding: 10px 0px 0px 0px
+}
+
+ .HeadingUL  {
+  margin: 10px 0px 0px 22px;
+  padding: 10px 0px 0px 0px
+}
 .myUL{
   margin: 0px !important;
   padding: 0px !important;
