@@ -1,0 +1,73 @@
+.servicesidebar {
+  float:left;  
+  margin: 0;
+  padding: 0;
+  width:20%; 
+  background-color: #f1f1f1;
+
+ padding-left: 10px;
+  
+}
+
+.servicesidebar a {
+  display: block;
+  color: black;
+  padding: 16px;
+  text-decoration: none; 
+}
+
+.servicesidebar a.active {
+  background-color: #4caf50;
+  color: white;
+}
+
+.servicesidebar a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+
+
+@media screen and (max-width: 700px) {
+  .servicesidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .servicesidebar a {
+    float: left;
+  }
+  div.servicecontent {
+    margin-left: 0;
+  }
+}
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+@media screen and (max-width: 400px) {
+  .servicesidebar a {
+    text-align: center;
+    float: none;
+  }
+}
+
+

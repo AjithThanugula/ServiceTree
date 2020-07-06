@@ -2,9 +2,9 @@ import React, { Component } from "react";
 import "./navbar.css";
 import logo from "../../assests/images/stree1.png";
 import { Link, Route } from "react-router-dom";
-import Service from "../services/service";
-import Organization from "../organizations/organization";
-import Offering from "../offerings/offering";
+import ServiceModel from "../serviceModel/service";
+import OrganizationModel from "../organizationModel/organizationModel";
+import OfferingModel from "../offeringModel/offeringModel";
 import OnBoarding from '../more/onBoarding/onBoarding'
 import SubscriptionRegistration from '../more/subscriptionRegistration/subscriptionRegistration'
 import MetadataDefinition from '../more/metadataDefinition/metadataDefinition'
@@ -32,9 +32,9 @@ export class Navbar extends Component {
               Browse <i className="fa fa-caret-down"></i>
             </button>
             <div className="subnav-content">
-              <Link to="/Service">Service</Link>
-              <Link to="/Organization">Organization</Link>
-              <Link to="/Offering">Offering</Link>
+              <Link to="/ServiceModel">Service</Link>
+              <Link to="/OrganizationModel">Organization</Link>
+              <Link to="/OfferingModel">Offering</Link>
             </div>
           </div>
        
@@ -53,9 +53,9 @@ export class Navbar extends Component {
           </div>
         </div>
       
-        <Route path="/Organization" component={Organization} />
-        <Route path="/Offering" component={Offering} />
-        <Route path="/Service" component={Service} />
+        <Route path="/OrganizationModel" component={OrganizationModel} />
+        <Route path="/OfferingModel" component={OfferingModel} />
+        <Route path="/ServiceModel" component={ServiceModel} />
         <Route path="/OnBoarding" component={OnBoarding} />
         <Route path="/SubscriptionRegistration" component={SubscriptionRegistration} />
         <Route path="/MetadataDefinition" component={MetadataDefinition} />

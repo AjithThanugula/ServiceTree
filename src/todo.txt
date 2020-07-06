@@ -1,0 +1,6 @@
+1.Move Common code like (Content-->Profile,Metadata,History) to Common Folder
+2.Folder ReStructuring
+  2.1 Coding Conventions
+3.Implement Redux for SuperAdmin and user controls
+4.ApI Calls Integration
+

@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import Sidebar from '../../offerings/sidebar/sidebar'
+import Sidebar from './sidebar/sidebar'
 export class metadataDefinition extends Component {
     render() {
         return (
