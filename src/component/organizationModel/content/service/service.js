@@ -1,6 +1,6 @@
 import React, { Component, Fragment } from 'react'
 import Content from '../content'
-import {getServiceGroupData} from '../../../../api/ajaxCalls1/_base'
+import {getServiceGroupData} from '../../../../api/ajaxCalls/_base'
 import { DataGrid, GridColumn } from "rc-easyui";
 export class service extends Component {
     constructor(props) {

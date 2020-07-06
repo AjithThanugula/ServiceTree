@@ -1,7 +1,7 @@
 import React, { Component, Fragment } from "react";
 import Content from "../content";
 import { withRouter } from "react-router-dom";
-import { getSubscriptionsData } from "../../../../api/ajaxCalls1/_base";
+import { getSubscriptionsData } from "../../../../api/ajaxCalls/_base";
 import { DataGrid, GridColumn } from "rc-easyui";
 
 export class Subscription extends Component {

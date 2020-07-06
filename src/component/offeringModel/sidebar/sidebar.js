@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "./sidebar.css";
-import { getOfferingsData, getProductSKUData } from "../../../api/ajaxCalls1/_base";
+import { getOfferingsData, getProductSKUData } from "../../../api/ajaxCalls/_base";
 import { withRouter } from "react-router-dom";
 import Hierarchy from './hierarchy'
 //import Icon from '@material-ui/core/Icon';

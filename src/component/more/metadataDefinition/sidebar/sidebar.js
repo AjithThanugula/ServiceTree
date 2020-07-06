@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "./sidebar.css";
-import { getOrganizationMetadata, getOfferingMetadata, getServiceMetadata } from '../../../../api/ajaxCalls1/_base'
+import { getOrganizationMetadata, getOfferingMetadata, getServiceMetadata } from '../../../../api/ajaxCalls/_base'
 import { withRouter } from "react-router-dom";
 
 
