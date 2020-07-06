@@ -1,9 +1,9 @@
 import React from 'react'
 import { Route } from "react-router-dom";
 import Sidebar from "./sidebar/sidebar";
-import NewService from "../createService/createService";
+import NewService from "../createService/createService1";
 //import Organization from './organization/organization'
-import Modal from '../createService/modal'
+import Modal from '../createService/modal1'
 import Home from './home'
 import Profile from './content/profile/profile'
 import History from './content/history/history' 
