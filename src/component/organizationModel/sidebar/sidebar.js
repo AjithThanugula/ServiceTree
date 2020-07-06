@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "./sidebar.css";
-import { getDivisionData, getOrganizationData } from '../../../api/ajaxCalls/_base'
+import { getDivisionData, getOrganizationData } from '../../../api/ajaxCalls1/_base'
 import { Link, withRouter } from "react-router-dom";
 import Hierarchy from './hierarchy/hierarchy'
 export class Sidebar extends Component {

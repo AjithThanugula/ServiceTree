@@ -1,7 +1,7 @@
 import React, { Component, Fragment } from "react";
 import Content from "../content";
 import { withRouter } from "react-router-dom";
-import { getOfferingsData, getProductSKUData } from "../../../../api/ajaxCalls/_base";
+import { getOfferingsData, getProductSKUData } from "../../../../api/ajaxCalls1/_base";
 import "./profile.css";
 export class Profile extends Component {
   constructor(props) {

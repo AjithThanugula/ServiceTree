@@ -7,7 +7,7 @@ import {
   getHierarchyData,
   getOrganizationData,
   getServiceGroupData,
-} from "../../../api/ajaxCalls/_base";
+} from "../../../api/ajaxCalls1/_base";
 export class Sidebar extends Component {
   constructor(props) {
     super(props);

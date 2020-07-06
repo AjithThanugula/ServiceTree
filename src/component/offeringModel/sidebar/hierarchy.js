@@ -1,5 +1,5 @@
 import React, { Fragment } from 'react'
-import { getFeaturesData } from "../../../api/ajaxCalls/_base";
+import { getFeaturesData } from "../../../api/ajaxCalls1/_base";
 function hierarchy(props) {
 
     const HeadingUL = {
