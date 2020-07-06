@@ -9,7 +9,7 @@ export class Modal extends React.Component {
           <div className={`Modal ${this.props.className || ''} ${overflow}`}>
             <div className="Modal__window">
               {
-                this.props.hideTitle ? null :
+                this.props.hideTitle ? null : 
                 <div className="Modal__window__header">
                   <h3>{this.props.title}</h3>
                   {this.props.closeUrl && (

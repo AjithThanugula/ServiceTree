@@ -51,7 +51,7 @@ export class Navbar extends Component {
           <div className="search-container">
             <input type="text" placeholder="Search.." name="search" />
           </div>
-        </div>
+        </div> 
       
         <Route path="/OrganizationModel" component={OrganizationModel} />
         <Route path="/OfferingModel" component={OfferingModel} />

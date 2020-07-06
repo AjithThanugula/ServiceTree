@@ -3,7 +3,7 @@
     z-index: 10;
     background:white ;
 }
-.Modal {
+.Modal { 
     display: flex;
     background: red;
     color: #fff;
