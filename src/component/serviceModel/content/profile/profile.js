@@ -43,7 +43,7 @@ export class Profile extends Component {
             <div className="display">
               <form action="/action_page.php">
                 <label htmlFor="fname">Name</label>
-                <input type="text" id="fname" name="name" defaultValue={data.Name} />
+                <input type="text" id="fname" name="name" value={data.Name} />
                 <label htmlFor="sname">Short Name</label>
                 <input type="text" id="sname" name="sname" defaultValue={data.Name} />
                 <label htmlFor="org">Organization</label>

@@ -3,9 +3,11 @@
   margin: 0;
   padding: 0;
   width:20%; 
-  background-color: #f1f1f1;
+  background-color: #e8e8e8;
 
  padding-left: 10px;
+ margin-top:100px;
+position:fixed;
   
 }
 
@@ -63,11 +65,22 @@
 .tooltip:hover .tooltiptext {
   visibility: visible;
 }
+
+.orgHeadingli  {
+  margin: 0px 0px 0px 10px;
+ padding:1px 0px 5px 0px
+};
+
+.orgHeadingli_caret {
+margin: 0px 0px 0px 25px;
+padding: 4px
+};
 @media screen and (max-width: 400px) {
   .orgsidebar a {
     text-align: center;
     float: none;
   }
 }
+
 
 

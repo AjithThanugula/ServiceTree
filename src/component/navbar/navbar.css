@@ -3,14 +3,36 @@
   .navbar {
     overflow: hidden;
     background-color: #333;
+    height:auto;
+    width: 100%;
+    position: fixed;
+  }
+
+   
+  .navbar1 {
+   
+    background-color: gray;
+    height:auto;
+    width: 100%;
+    position: fixed;
+    margin-top:3.5%;
+    padding-left: 10%;
   }
   
   .navbar a { 
     float: left;
-    font-size: 16px;
     color: white;
     text-align: center;
     padding: 14px 16px;
+    text-decoration: none;
+  }
+
+  .home
+  {
+    float: left;
+    color: white;
+    text-align: center;
+    padding:0px !important;
     text-decoration: none;
   }
   
@@ -27,7 +49,7 @@
     padding: 14px 16px;
     background-color: inherit;
     font-family: inherit;
-    margin: 0;
+    margin: 0; 
   }
   
   .navbar a:hover,
@@ -36,18 +58,20 @@
   }
   
   .subnav-content {
-    display: none;
-    position: absolute;
+   
+  
     left: 0;
     background-color: gray;
     width: 100%;
     z-index: 1;
+  
   }
   
   .subnav-content a {
     float: left;
-    color: white;
+    color: black;
     text-decoration: none;
+    padding: 10px 60px 10px 60px;
   }
   
   .subnav-content a:hover {
@@ -62,6 +86,100 @@
 
   .search-container {
     float: right;
+    padding-top: 7px !important;
+    margin: 0px !important;
+    border: 0px !important;
+    position:relative;
+  }
+
+  .searchbox
+  {
+    width: 300px;
+    padding: 10px !important;
+    margin: 0px !important;
+    border: 0px !important;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+   
+    
+  }
+
+  
+
+  .Icon {
+    padding-top: 3px !important;
+  padding: 10px;
+  margin:10px;
+  background-color: 	#339884 !important;
+    color: white;
+    font-size: 17px;
+    border: 1px solid grey;
+    border-left: none;
+    cursor: pointer;
+    border-radius: 5px;
   }
  
+  .image
+  {
+   padding-top: 10px;
+   height: 40px;
+   float: left;
   
+  }
+   
+  .image2
+  {
+   
+   height: 20px;
+ 
+  
+  }
+  .fatable{
+   padding:15px;
+    float: left;
+    margin-right: 10px;
+    border-right: 2px solid white;
+   
+  }
+  .Stree
+  {
+   padding-top: 12px !important;
+   padding-left: 0px !important;
+  }
+
+  .SIcon {
+    padding-top: 3px !important;
+  padding: 10px;
+  left:auto;
+  background-color: 	#339884 !important;
+    color: white;
+    font-size: 17px;
+    border: 1px solid grey;
+    border-left: none;
+    cursor: pointer;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+  }
+.active
+{
+background-color: #339884 !important;
+}
+
+/* button::after
+{
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 1;
+  
+  bottom: -.525rem;
+  left: calc(50% - .75rem);
+  color: #e8e8e8;
+  opacity: 1;
+
+} */
+
+
+

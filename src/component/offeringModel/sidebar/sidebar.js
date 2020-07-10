@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import "./sidebar.css";
 import { getOfferingsData, getProductSKUData } from "../../../api/ajaxCalls/_base";
-import { withRouter } from "react-router-dom";
+import { withRouter,Link } from "react-router-dom";
 import Hierarchy from './hierarchy'
 
 export class sidebar extends Component {
@@ -33,7 +33,7 @@ export class sidebar extends Component {
     this.setState({ filterData: filterData })
     // console.log(filterData);
   }
-
+ 
   fetchMatchedData(item) {
     let filterData = []
 
@@ -42,7 +42,17 @@ export class sidebar extends Component {
     //console.log(filterData);
   }
 
-  FetchProfileData = (id, model) => {
+  FetchProfileData = (id, model,ref) => {
+
+ debugger;
+    
+    let element = document.getElementsByClassName("offerHeadingUL1 active")[0];
+  if(element)
+   element.classList.remove("active");
+   element = document.getElementsByClassName("offerHeadingUL active")[0];
+  if(element)
+   element.classList.remove("active");
+ ref.target.parentElement.parentElement.classList.add("active");
     switch (model) {
       case "ProductSku":
         this.props.history.push("/OfferingModel/ProductSku/Profile/" + id, { tab: "ProductSku" });
@@ -82,9 +92,13 @@ export class sidebar extends Component {
 
     return (
       <div className="offeringsidebar">
-
-        <p className="SiderBarHeader">Request a New Offering</p>
-        <button>Previous</button> <button style={{ marginLeft: "0px" }}>Next</button><br></br>
+        <div className="fixedPosition">
+  <button className="dispButton1 ">
+          <Link to="/OrganizationModel/NewService">Create New Offering</Link>
+        </button>
+      
+        <button className="pbutton buttonmargin">Prev</button> <button className="button" >Next</button>
+        </div>
         <div className="alphalink" ><ul className="LinkUL">
           {letters.map((letter, i) => (
             <li key={i} onClick={this.fetchMatchedData.bind(this, letter)}>{letter}</li>
@@ -97,7 +111,7 @@ export class sidebar extends Component {
               (e, i) => (
                 this.state.productSKU.find(o => o.OfferingId === e.Id) ?
                   <Hierarchy key={i} productSKU={this.state.productSKU} offeringData={e} FetchProfileData={this.FetchProfileData} expand={this.expand}></Hierarchy>
-                  : <li className="HeadingUL1" key={i}>  <span className="icon">Of</span><span className="textHeading" onClick={() => this.FetchProfileData(e.Id)}>{e.Name.length > 25 ? e.Name.substring(0, 25) + "..." : e.Name}</span></li>
+                  : <li className="offerHeadingUL1" key={i}>  <span><span className="icon">Of</span><span className="textHeading" onClick={(ref) => this.FetchProfileData(e.Id,"Offering",ref)}>{e.Name.length > 25 ? e.Name.substring(0, 25) + "..." : e.Name}</span></span></li>
               )
             )}
           </ul>

@@ -13,7 +13,7 @@ export class Profile extends Component {
     };
   }
   static getDerivedStateFromProps(props, state) {
-debugger;
+//debugger;
     let id = props.match.params.id;
     let data = [];
     let organizationData = [];

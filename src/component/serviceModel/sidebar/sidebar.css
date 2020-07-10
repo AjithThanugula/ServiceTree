@@ -3,12 +3,18 @@
   margin: 0;
   padding: 0;
   width:20%; 
-  background-color: #f1f1f1;
-
- padding-left: 10px;
+  background-color: #e8e8e8;
+padding-left: 10px;
+ margin-top:100px;
+position:fixed;
+overflow-x: hidden;
+height: 650px;
   
 }
-
+.button
+{
+  background-color: 	#339884 !important;
+}
 .servicesidebar a {
   display: block;
   color: black;
@@ -17,7 +23,7 @@
 }
 
 .servicesidebar a.active {
-  background-color: #4caf50;
+  background-color: 	#339884;
   color: white;
 }
 

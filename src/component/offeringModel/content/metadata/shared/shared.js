@@ -1,14 +1,17 @@
 import React, { Component,Fragment } from 'react'
-import { ProgressBar, Step } from "react-step-progress-bar";
-
-import "react-step-progress-bar/styles.css";
+import Stepper from 'react-stepper-horizontal'
 import './shared.css'
-import logo from '../../../../../assests/images/greenDot.jpg'
+
 export class shared extends Component {
-    render() {
+    render() { 
         return (
             <Fragment>
-                <p>View and edit common Metadata values that are shared across all cloud locations</p>
+              <p>View and edit common Metadata values that are shared across all cloud locations</p>
+                <div className="div-shared">
+                <h2>Offering Lifecycle Status</h2>
+               <Stepper steps={ [{title: 'In Development'}, {title: 'Private Preview'}, {title: 'Public Preview'}, {title: 'GA'},{title:'Closing Down'}] } activeStep={ 1 } activeTitleColor={"#339884"} defaultOpacity={5}/>
+               </div>
+                {/* <p>View and edit common Metadata values that are shared across all cloud locations</p>
                 <div className="div-shared">
 
             <h2>Offering Lifecycle Status</h2>
@@ -65,7 +68,7 @@ export class shared extends Component {
             </Step>
             <h4 className="metadatah1">Retired</h4>
           </ProgressBar>
-          </div>
+          </div> */}
           </Fragment>
         )
     }

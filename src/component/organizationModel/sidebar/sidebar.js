@@ -16,7 +16,7 @@ export class Sidebar extends Component {
 
   fetchOrganization = (e) => {
 
-    let divValue = e.target.value;
+    let divValue = e.target.value; 
 
     let orgData = getOrganizationData();
     if (divValue !== "All") {
@@ -29,6 +29,7 @@ export class Sidebar extends Component {
 
   };
   expand = (e) => {
+
 
     let toggler = document.getElementsByClassName("caret");
 
@@ -43,7 +44,16 @@ export class Sidebar extends Component {
     }
   };
 
-  FetchProfileData = (id, model) => {
+  FetchProfileData = (id, model,ref) => {
+
+    
+    let element = document.getElementsByClassName("orgHeadingli active")[0];
+if(element)
+element.classList.remove("active");
+ element = document.getElementsByClassName("orgHeadingli_caret active")[0];
+if(element)
+element.classList.remove("active");
+ref.target.parentElement.parentElement.classList.add("active");
     switch (model) {
       case "Organization":
 
@@ -69,7 +79,10 @@ export class Sidebar extends Component {
 
     return (
       <div className="orgsidebar">
-        <Link to="/Organization/NewService">New Service</Link>
+          <button class="dispButton1">
+          <Link to="/OrganizationModel/NewService">Create New Organization</Link>
+        </button>
+      
         <label>
           <p>Please select Division</p>
         </label>

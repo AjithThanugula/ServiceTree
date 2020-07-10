@@ -1,6 +1,25 @@
-/* .App {
-  text-align: center;
+.App {
+ 
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
 }
+ul{
+  border-radius: 5px;
+}
+li{
+  border-radius: 5px;
+}
+
+.dispButton1 {
+  width: 100%;
+  border:0px !important;
+}
+.dispButton1>a
+{
+  font-size: 16px;
+  color:#339884 !important;
+  font-weight: bold;
+}
+/* 
 
 .App-logo {
   height: 40vmin;

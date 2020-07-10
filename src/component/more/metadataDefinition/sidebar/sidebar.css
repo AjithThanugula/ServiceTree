@@ -1,79 +1,150 @@
-.servicesidebar {
-    float:left;  
-    margin: 0;
-    padding: 0;
-    width:20%; 
-    background-color: #f1f1f1;
+
+.metaDefsidebar{
+  height: 650px;
+  width: 20%; 
   
-   padding-left: 10px;
-    
+  top: 2;
+  left: 0; 
+  float:left;  
+  overflow-x: hidden;
+  margin-top:100px;
+  position:fixed;
   }
-  .dispButton {
-      width: 100%;
-      margin:0px !important;
-      padding:10px;
-      background-color: #18a118 !important;
+ 
+  .myUL{
+    margin: 0px !important;
+    padding: 0px !important;
   }
-  .servicesidebar a {
+  .metaDefsidebar a {
     display: block;
     color: black;
     padding: 16px;
-    text-decoration: none; 
+    text-decoration: none;
   }
   
-  .servicesidebar a.active {
+  .metaDefsidebar a.active {
     background-color: #4caf50;
     color: white;
   }
   
-  .servicesidebar a:hover:not(.active) {
+  .metaDefsidebar a:hover:not(.active) {
     background-color: #555;
     color: white;
   }
   
+  .icon{
+    width: 15px;
+    height: 15px;
+    border-radius: 24px;
+    background-color: #6b1886e8;
+    padding: 5px;
+    color: white;
+    font-size: 11px;
+    font-family: monospace;
+  }
+  /* .textHeading{
+    padding: 5px;
+      font-size: 13px;
+  } */
+  .innersidebar{
+    width: 100%;
+    background-color: white;
+    padding-top: 13px;
+    margin-left: 27px;
+  }
+  .alphalink{
+    float: left;
+  }
+  
+  .alphalink > ul{
+    margin: 0px;
+  padding: 16px;
+  list-style: none;
+  }
+  
+  /* .metaDefsidebar > button{
+    margin-left: 47px;
+      background-color: greeb;
+      background-color: #094a3e;
+      border-block-end-style: none;
+      color: white;
+  } */
+  .SiderBarHeader{
+    width: auto;
+      background-color: darkgrey;
+      padding: 10px;
+      font-size: 14px;
+      color: #3972b9;
+  }
+  
   
   @media screen and (max-width: 700px) {
-    .servicesidebar {
+    .metaDefsidebar {
       width: 100%;
       height: auto;
       position: relative;
     }
-    .servicesidebar a {
+    .metaDefsidebar a {
       float: left;
     }
-    div.servicecontent {
+    div.content {
       margin-left: 0;
     }
   }
-  .tooltip {
-    position: relative;
-    display: inline-block;
-    border-bottom: 1px dotted black;
-  }
   
-  .tooltip .tooltiptext {
-    visibility: hidden;
-    width: 120px;
-    background-color: black;
-    color: #fff;
-    text-align: center;
-    border-radius: 6px;
-    padding: 5px 0;
-  
-    /* Position the tooltip */
-    position: absolute;
-    z-index: 1;
-  }
-  
-  .tooltip:hover .tooltiptext {
-    visibility: visible;
-  }
   @media screen and (max-width: 400px) {
-    .servicesidebar a {
+    .metaDefsidebar a {
       text-align: center;
       float: none;
     }
   }
   
+  
+  ul, #myUL {
+    list-style-type: none;
+  
+  }
+  
+  .hierarchyli{
+    padding: 10px 0px;
+   
+  }
+  .myUL {
+    margin: 0;
+    padding: 0;
+   
+  }
+  .hirarchylabel{
+    cursor: pointer;
+  }
+  .caret {
+    cursor: pointer;
+    -webkit-user-select: none; /* Safari 3.1+ */
+    -moz-user-select: none; /* Firefox 2+ */
+    -ms-user-select: none; /* IE 10+ */
+    user-select: none;
+  }
+  
+  .caret::before {
+    content: "\25B6";
+    color: black;
+    display: inline-block;
+    margin-right: 6px;
+  }
+  
+  .caret-down::before {
+    -ms-transform: rotate(90deg); /* IE 9 */
+    -webkit-transform: rotate(90deg); /* Safari */
+    transform: rotate(90deg);  
+  }
+  
+  .nested {
+    display: none;
+  }
+  
+  .active1 {
+    display: block;
+    background-color: #e8e8e8 !important;
+  }
   
   

@@ -3,9 +3,11 @@ import './subscriptionRegistration.css'
 export class subscriptionRegistration extends Component {
     render() {
         return (
+          
             <div className="subRegistration">
-                <h2>Subscription Registration </h2>
+            <h2>Subscription Registration </h2>
                 <div className="innersubRegistration">
+                <h2>Subscription Registration </h2>
                 <h3>SUBSCRIPTION PURPOSE</h3>
                 <input type="radio" id="dev" name="dev" value="dev"/>
                    <label for="dev">For development,hosting,monitoring or testing a service</label><br></br> <br></br>
@@ -29,6 +31,7 @@ export class subscriptionRegistration extends Component {
                    <button className="srbutton">Next</button>
                    </div>
             </div>
+           
         )
     }
 }

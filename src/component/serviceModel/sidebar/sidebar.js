@@ -79,8 +79,9 @@ export class Sidebar extends Component {
   render() {
     return (
       <div className="servicesidebar">
-
+          <button class="dispButton1">
         <Link to="/CreateService">Create New Service</Link>
+        </button>
         <label>
           <p>Please select Division</p>
         </label>
@@ -126,7 +127,7 @@ export class Sidebar extends Component {
             // <Select key={i} label={e.label} value={e.value} />
           )}
         </select>
-        <button onClick={this.FetchProfileData}>Apply</button>
+        <button className="button" onClick={this.FetchProfileData}>Apply</button>
         <h3>Hierarchy</h3>
         <ul id="myUL" >
           <Hierarchy  members={this.state.hierarchy} />

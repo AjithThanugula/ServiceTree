@@ -12,7 +12,7 @@ export class offeringModel extends Component {
   render() {
     let absolutePath = "/OfferingModel/"
     return (
-      <div>
+      <div >
         <Sidebar />
         <div className="offeringcontent">
           <Switch>

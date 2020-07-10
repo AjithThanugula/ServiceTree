@@ -14,7 +14,10 @@ ul, #myUL {
 }
 .hirarchylabel{
   cursor: pointer;
+ padding-left: 10px;
+
 }
+
 .caret {
   cursor: pointer;
   -webkit-user-select: none; /* Safari 3.1+ */
@@ -42,5 +45,10 @@ ul, #myUL {
 
 .active1 {
   display: block;
-  background-color: #f1f1f1 !important;
+  background-color: #e8e8e8 !important;
+}
+
+label:focus
+{
+background-color: #339884;
 }

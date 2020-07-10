@@ -5,6 +5,8 @@
   width: 98%;
   margin: 20px;
   background-color: #fef9e7;
+  position: absolute;
+  margin-top: 100px;
 }
 
 .onBoard {
@@ -15,6 +17,7 @@
   border-bottom: 2px solid black;
   padding-bottom: 400px;
   margin: 20px;
+
 }
 
 .onBoardLabel {

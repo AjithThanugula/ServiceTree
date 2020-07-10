@@ -4,11 +4,25 @@ div.servicecontent {
  
   padding: 1px 16px;
   height: 100%;
- 
+  margin-top:100px;
+  margin-left: 20%;
 }
 .caution {
   color: red;
 }
+p{
+  padding: 0px !important;
+  border: 0px !important;
+}
+.Home {
+ 
+  margin-bottom: 0;
+}
+
+.bgColor{
+  color: 	#339884;
+}
+
 
 @media screen and (max-width: 700px) {
   div.servicecontent {

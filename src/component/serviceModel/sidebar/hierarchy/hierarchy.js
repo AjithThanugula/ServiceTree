@@ -8,8 +8,12 @@ export class HierarchyView extends Component {
     return member.Children.length === 0 ? false : true;
   }
 
-  display = (e) => {
-   
+  display = (e,ref) => {
+//debugger;
+let element = document.getElementsByClassName("hierarchyli active")[0];
+if(element)
+element.classList.remove("active");
+ref.target.parentElement.classList.add("active");
     this.props.history.push("/ServiceModel/Profile/" + e.ServiceGroupId, {
       member: e,
     });
@@ -34,15 +38,17 @@ export class HierarchyView extends Component {
       <Fragment>
         {data.map((member, i) => {
           return (
-            <Fragment key={i}> 
+            <Fragment key={i}>
               {this.hasChildren(member) ? (
                 <li className="hierarchyli" key={member.Name}>
                   <span
-                    className="caret"
+                    className="caret fa fa-caret-down"
                     onClick={() => this.expand(member.Name)}
                   >
-                    <label className="hirarchylabel" onClick={() => this.display(member)}>
+                    <label className="hirarchylabel" onClick={(a) => this.display(member,a)}>
+
                       {member.Name}
+
                     </label>
                   </span>
                   <ul className="nested" >
@@ -50,12 +56,15 @@ export class HierarchyView extends Component {
                   </ul>
                 </li>
               ) : (
-                <li className="hierarchyli" key={member.Name}>
-                  <label  className="hirarchylabel" onClick={() => this.display(member)}>
-                    {member.Name}
-                  </label>
-                </li>
-              )}
+                  <li className="hierarchyli" key={member.Name}>
+                    <label className="hirarchylabel" onClick={(a) => this.display(member,a)}>
+
+                      {member.Name}
+
+
+                    </label>
+                  </li>
+                )}
             </Fragment>
           );
         })}

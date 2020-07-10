@@ -42,6 +42,14 @@ ul, #myUL {
   
   .active1 {
     display: block;
-    background-color: #f1f1f1 !important;
+    background-color: #e8e8e8 !important;
   }
-  
+ .orgHeadingli  {
+    margin: 0px 0px 0px 10px;
+   padding:1px 0px 5px 0px
+};
+
+ .orgHeadingli_caret {
+  margin: 0px 0px 0px 25px;
+  padding: 4px
+};

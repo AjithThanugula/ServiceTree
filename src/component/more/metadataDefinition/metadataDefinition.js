@@ -1,11 +1,12 @@
 import React, { Component } from 'react'
 import Sidebar from './sidebar/sidebar'
+import './metaDefinition.css'
 export class metadataDefinition extends Component {
     render() {
         return (
             <div> 
             <Sidebar />
-            <div className="offeringcontent">
+            <div className="metaDefinition">
            
 
                 <h2>METADATA DEFINITION</h2>

@@ -2,6 +2,9 @@
 {
     width: 80%;
     padding-left: 100px;
+    position: absolute;
+    margin-top: 100px;
+    
 }
 
 .otherTxtbox

@@ -10,6 +10,7 @@ import History from './content/history/history'
 import Metadata from './content/metadata/metadata'
 import Administrator from './content/administrator/administrator'
 import Service from './content/service/service'
+import Stepper from '../createService/stepper/stepper'
 import './organizationModel.css'
 function organizationModel(props) {
   const absolutePath="/OrganizationModel/"
@@ -19,15 +20,16 @@ function organizationModel(props) {
 
         <div className="content">
 
-          <Route path={`${props.match.url}/NewService`}
+          <Route path={absolutePath+`NewService`}
             render={() => (
-              <Modal
-                className="CheckInStudentModal"
-                title="Check-In Student"
-                closeUrl={props.match.url}
-              >
-                <NewService></NewService>
-              </Modal>
+              // <Modal
+              //   className="NewService"
+              //   title="Create New Service"
+              //   closeUrl={props.match.url}
+              // >
+              //   <NewService></NewService>
+              // </Modal>
+              <Stepper></Stepper>
            )}
           />
            <Route  path={absolutePath+"Organization/Profile/:id"} render={() => <Profile tab="Organization" />} />

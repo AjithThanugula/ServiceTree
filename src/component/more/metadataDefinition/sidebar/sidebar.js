@@ -76,17 +76,19 @@ export class sidebar extends Component {
 
 
         const HeadingUL1 = {
-            margin: "10px 0px 0px 40px",
-            padding: "10px 0px 0px 0px" 
+            margin: "0px 0px 0px 20px",
+  padding:"1px 0px 5px 0px"
         };
 
         return (
-            <div className="offeringsidebar">
-  <button className="dispButton">ADD SERVICE MDEF</button> <br></br>
-  <button className="dispButton">ADD ORGANIZATION MDEF</button><br></br>
-  <button className="dispButton">ADD OFFERING MDEF</button> <br></br>
-                <p className="SiderBarHeader">Request a New Offering</p>
-                <button>Previous</button> <button style={{ marginLeft: "0px" }}>Next</button><br></br>
+            <div className="metaDefsidebar">
+  <button className="button">ADD SERVICE MDEF</button> <br></br>
+  <button className="button">ADD ORGANIZATION MDEF</button><br></br>
+  <button className="button">ADD OFFERING MDEF</button> <br></br>
+              
+                <button className="button">Request a New Offering</button> <br></br>
+                <br></br>
+                <button className="button">Previous</button> <button className="button" style={{ marginLeft: "0px" }}>Next</button><br></br>
                 <div className="alphalink" ><ul className="LinkUL">
                     {letters.map((letter, i) => (
                         <li key={i} onClick={this.fetchMatchedData.bind(this, letter)}>{letter}</li>
